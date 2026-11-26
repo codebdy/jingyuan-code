@@ -29,6 +29,7 @@ export function initSectionFeedback() {
     const rect = stage.getBoundingClientRect();
     if (rect.top + scrollY < 900 || stage.querySelector('[data-manufacturing-video]')) return;
     stage.dataset.revealBlock = '';
+    stage.dataset.revealKind = 'image';
   });
   document.querySelectorAll<HTMLElement>('.design-canvas h2,[data-home] section h2').forEach(heading => {
     if (heading.closest(cardSelector + ',form,dialog')) return;
@@ -36,7 +37,16 @@ export function initSectionFeedback() {
     [...parent?.children ?? []].forEach(child => {
       if (!child.matches('p') || (child.textContent?.trim().length ?? 0) < 40) return;
       (child as HTMLElement).dataset.revealBlock = '';
+      (child as HTMLElement).dataset.revealKind = 'copy';
     });
+  });
+  document.querySelectorAll<HTMLElement>('[data-home] .hero-photo,[data-home] .application-photo,[data-home] .story-photo').forEach(image => {
+    image.dataset.revealBlock = '';
+    image.dataset.revealKind = 'image';
+  });
+  document.querySelectorAll<HTMLElement>('[data-home] .manufacturing-outro,[data-home] .application-specifications,[data-home] .story-copy > p').forEach(copy => {
+    copy.dataset.revealBlock = '';
+    copy.dataset.revealKind = 'copy';
   });
   // Imported decorative wrappers must not hide their newly interactive images.
   document.querySelectorAll<HTMLElement>('img[tabindex="0"]').forEach(image => {

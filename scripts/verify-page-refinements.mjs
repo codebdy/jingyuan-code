@@ -29,7 +29,7 @@ for(const group of ['selection-steps','category-applications']){
  const roots=p.locator(`[data-reveal-group="${group}"]`);await roots.first().scrollIntoViewIfNeeded();await p.waitForTimeout(100);
  const values=await roots.evaluateAll(nodes=>nodes.map(n=>({id:n.dataset.nodeId,state:n.dataset.contentRevealState,paint:n.querySelector('[data-reveal-paint-state]')?.dataset.revealPaintState,delay:(n.querySelector('[data-reveal-paint-state]')??n).style.getPropertyValue('--reveal-delay'),x:n.getBoundingClientRect().x,y:n.getBoundingClientRect().y})));
  const ordered=[...values].sort((a,b)=>group==='selection-steps'?a.y-b.y:a.x-b.x);
- ordered.forEach((value,i)=>{if(i)assert(parseFloat(value.delay)-parseFloat(ordered[i-1].delay)>250)});
+ ordered.forEach((value,i)=>{if(i)assert(parseFloat(value.delay)-parseFloat(ordered[i-1].delay)>100)});
  console.log(group,ordered);
 }
 await b.close();

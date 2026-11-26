@@ -17,6 +17,6 @@ for(const width of [1920,390]){
  assert.deepEqual(errors,[]);results.push({width,process:'smooth',inspection:'smooth',gallery:'keyboard and state reset',details:'native accordion',news:'correct title',strengths:'passed',errors});await p.close();
 }
 // Every local navigation destination must exist in the built site.
-const report=JSON.parse(fs.readFileSync('/private/tmp/jingyuan-qa/site-audit/report.json','utf8'));
-const paths=[...new Set(report.flatMap(r=>r.links))];const missing=paths.filter(h=>{const pathname=new URL(h,'http://localhost').pathname;if(pathname.startsWith('/figma/'))return false;return !fs.existsSync('dist'+pathname+(pathname.endsWith('/')?'index.html':''));});assert.deepEqual(missing,[]);
+const html=fs.readdirSync('dist',{recursive:true}).filter(path=>path.endsWith('.html')).map(path=>fs.readFileSync('dist/'+path,'utf8'));
+const paths=[...new Set(html.flatMap(source=>[...source.matchAll(/href="(\/(?!\/)[^"]*)"/g)].map(match=>match[1])))];const missing=paths.filter(h=>{const pathname=new URL(h,'http://localhost').pathname;if(pathname.startsWith('/figma/'))return false;return !fs.existsSync('dist'+pathname+(pathname.endsWith('/')?'index.html':''));});assert.deepEqual(missing,[]);
 fs.writeFileSync('/private/tmp/jingyuan-qa/site-feedback-report.json',JSON.stringify({results,localDestinations:paths.length},null,2));console.log(JSON.stringify({results,localDestinations:paths.length}));await b.close();

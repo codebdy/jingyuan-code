@@ -12,8 +12,8 @@ export function initContentReveal() {
   if (motion.matches || !('IntersectionObserver' in window)) return;
 
   const preset = getComputedStyle(document.documentElement);
-  const duration = parseFloat(preset.getPropertyValue('--content-reveal-duration')) || 1200;
-  const stagger = parseFloat(preset.getPropertyValue('--content-reveal-stagger')) || 260;
+  const duration = parseFloat(preset.getPropertyValue('--content-reveal-duration')) || 1000;
+  const stagger = parseFloat(preset.getPropertyValue('--content-reveal-stagger')) || 120;
   const owners = new Map<Element, HTMLElement>();
   const paints = new Map<HTMLElement, HTMLElement[]>();
   const groups = new Map<HTMLElement, object | string>();
@@ -49,13 +49,14 @@ export function initContentReveal() {
       const targets = paints.get(root)!;
       targets.forEach(target => observer.unobserve(target));
       const now = performance.now(), group = groups.get(root)!;
-      const delay = Math.max(0, (starts.get(group) ?? -Infinity) + stagger - now);
-      starts.set(group, now + delay);
+      const sequence = Math.max(0, (starts.get(group) ?? -Infinity) + stagger - now);
+      const delay = sequence + (root.dataset.revealKind === 'copy' ? 180 : 0);
+      starts.set(group, now + sequence);
       root.dataset.contentRevealState = 'revealing';
       targets.forEach(target => { target.style.setProperty('--reveal-delay', `${delay}ms`); target.dataset.revealPaintState = 'revealing'; });
       timers.set(root, setTimeout(() => finish(root), duration + delay + 300));
     });
-  }, { rootMargin: '0px 0px -16% 0px', threshold: .08 });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: .08 });
 
   roots.forEach(root => {
     const contentOnly = root.matches('.solution-card, .news-card, [data-application-card]');
