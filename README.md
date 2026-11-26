@@ -81,4 +81,4 @@
 
 网站英文品牌名称统一为 **Xinjingyuan Cable**，正文、导航、页面标题、图片说明及邮件占位文字同步更新；源码仓库仍为 codebdy/jingyuan-code。
 
-案例详情的基本信息位于右侧，使用原生 CSS sticky 吸附于导航下方；双栏详情结束后自然离开。手机正常排列。布局适配在 `src/data/case-study-layout.ts`，不改写原始设计 JSON。
+案例详情的基本信息位于左侧，使用原生 CSS sticky 吸附于导航下方；双栏详情结束后自然离开。手机正常排列。布局适配在 `src/data/case-study-layout.ts`，不改写原始设计 JSON。

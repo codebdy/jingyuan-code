@@ -10,7 +10,7 @@
 }
 @media (min-width: 801px) {
   .design-canvas [data-case-detail-column] {
-    left: calc(120 * var(--u)) !important;
+    left: calc(775 * var(--u)) !important;
     max-width: calc(1025 * var(--u));
   }
   .design-canvas[data-page="applications/project"] :is([data-node-id="265:260"], [data-node-id="269:536"], [data-node-id="269:509"]) {

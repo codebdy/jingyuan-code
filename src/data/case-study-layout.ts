@@ -12,7 +12,7 @@ export function createCaseStudyLayout(source: any) {
   copy.style = { ...copy.style, position: 'relative', left: 'auto', top: 'auto', width: '100%' };
   const sidebar = {
     tag: 'aside', attrs: { 'data-case-sidebar-track': '', 'aria-label': 'Project information' },
-    style: { position: 'absolute', left: 'calc(1260 * var(--u))', top: `calc(${start} * var(--u))`, width: 'calc(540 * var(--u))', height: `calc(${end - start} * var(--u))` },
+    style: { position: 'absolute', left: 'calc(120 * var(--u))', top: `calc(${start} * var(--u))`, width: 'calc(540 * var(--u))', height: `calc(${end - start} * var(--u))` },
     children: [{ tag: 'div', attrs: { 'data-case-summary': '', 'data-reveal-card': '' }, children: [copy] }],
   };
   const detailSlots = new Set(['252:121', '252:135', '265:213', '265:263', '269:538', '265:268', '269:585']);
