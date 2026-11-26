@@ -1,6 +1,7 @@
 :root {
-  --content-reveal-duration: 1000ms;
-  --content-reveal-stagger: 120ms;
+  --content-reveal-duration: 1300ms;
+  --content-reveal-stagger: 200ms;
+  --content-reveal-delay: 180ms;
   --content-reveal-distance: 16px;
   --content-reveal-easing: cubic-bezier(.23, 1, .32, 1);
 }

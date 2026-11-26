@@ -47,9 +47,11 @@ try {
     assert.equal(starts.length, 5);
     const toggle = page.locator('.process-toggle').first();
     await toggle.click();
-    assert.equal(await page.locator('.process-description').first().evaluate(n => n.hidden), true);
+    await page.waitForFunction(() => document.querySelector('.process-description').getBoundingClientRect().height < .1);
+    assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
     await toggle.click();
-    assert.equal(await page.locator('.process-description').first().evaluate(n => n.hidden), false);
+    await page.waitForFunction(() => document.querySelector('.process-description').getBoundingClientRect().height > 0);
+    assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
     if (width === 1920) await page.screenshot({ path: `${out}/process-reveal-complete.png` });
     results.push({ check: 'Five steps appear in order, retain layout, do not replay, plus controls work', width, starts });
     await page.close();

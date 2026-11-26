@@ -23,7 +23,7 @@ try{
    console.log(JSON.stringify({route,width,scanHeight:height,actualHeight:await page.evaluate(()=>document.documentElement.scrollHeight)}));
    const count=await page.locator('[data-content-reveal-root]').count();assert.ok(count>0,route+' cards');
    const registered=await page.locator('[data-reveal-paint-state]').count();assert.ok(registered>0,route+' paint boxes');
-   assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--content-reveal-duration').trim()),'1000ms');
+   assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--content-reveal-duration').trim()),'1300ms');
    for(let y=0;y<height;y+=600){await page.evaluate(y=>scrollTo({top:y,behavior:'instant'}),y);await page.waitForTimeout(65);}
    await page.waitForTimeout(3800);
    const stuck=await page.locator('[data-reveal-paint-state=pending]').evaluateAll(nodes=>nodes.filter(n=>{const r=n.getBoundingClientRect();let left=r.left,right=r.right,top=r.top,bottom=r.bottom;for(let a=n.parentElement;a&&a!==document.documentElement;a=a.parentElement){const s=getComputedStyle(a),b=a.getBoundingClientRect();if(s.overflowX!=='visible'&&s.display!=='contents'){left=Math.max(left,b.left);right=Math.min(right,b.right);}if(s.overflowY!=='visible'&&s.display!=='contents'){top=Math.max(top,b.top);bottom=Math.min(bottom,b.bottom);}}return right>Math.max(0,left)&&left<innerWidth&&bottom>top;}).map(n=>({id:n.dataset.nodeId,text:n.textContent.slice(0,55),top:n.getBoundingClientRect().top+scrollY})));
