@@ -8,7 +8,7 @@ export function initTitleReveal() {
     '#products-title', '#solutions-title', '[data-title-reveal-after]',
     '#manufacturing-title', '#application-title', '#about-title',
     '.story-copy h3', '#news-title', '#contact-title',
-    '.design-canvas [data-title-reveal]',
+    '.design-canvas [data-title-reveal]', '.news-detail [data-title-reveal]',
   ].join(','))).filter(title => title.textContent?.trim() && !title.parentElement?.closest('[data-title-reveal]') && !title.closest(
     '#hero-title, dialog, [data-content-reveal-root], [data-counter], [aria-hidden="true"], [data-catalog-card], [data-case-card], [data-news-card], [data-product-preview], [role="button"]',
   ));

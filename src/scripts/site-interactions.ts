@@ -84,8 +84,15 @@ if(page==='quality-manufacturing'){initInspectionDisclosure(byId('326:28'));
 }
 initEquipmentTabs();
 
-// The design includes article cards, but no article-detail artboard or full body.
-document.querySelectorAll<HTMLElement>('[data-news-card]').forEach(card=>{const action=card.querySelector<HTMLElement>('[data-action]');action?.addEventListener('click',event=>{event.preventDefault();if(!modal||!title||!image||!content)return;const heading=Array.from(card.querySelectorAll<HTMLElement>('p,h2')).find(n=>(parseFloat(n.style.getPropertyValue('--design-font'))||parseFloat(getComputedStyle(n).fontSize))>=22);title.textContent=heading?.textContent??'News';const photo=card.querySelector<HTMLImageElement>('img[data-photo]');image.hidden=!photo;if(photo){image.src=photo.src;image.alt=title.textContent??'';}content.replaceChildren();Array.from(card.querySelectorAll<HTMLElement>('p')).filter(n=>n!==heading&&!n.closest('[data-action]')).forEach(n=>{const p=document.createElement('p');p.textContent=n.textContent;content.append(p);});modal.querySelectorAll<HTMLElement>('[data-gallery-prev],[data-gallery-next]').forEach(b=>b.hidden=true);modal.querySelector<HTMLElement>('#media-download')!.hidden=true;gallery=[];softenSwap(content);modal.showModal();});if(action){const open=()=>action.click();card.style.cursor='pointer';card.addEventListener('click',event=>{if((event.target as Element).closest('a,button,input,select,textarea,[role=link],[role=button]')||getSelection()?.toString())return;open();});const photo=card.querySelector<HTMLImageElement>('img[data-photo]');const heading=Array.from(card.querySelectorAll<HTMLElement>('p,h2')).find(n=>(parseFloat(n.style.getPropertyValue('--design-font'))||parseFloat(getComputedStyle(n).fontSize))>=22);[photo,heading].forEach(node=>{if(!node)return;node.tabIndex=0;node.setAttribute('role','link');node.style.cursor='pointer';node.style.pointerEvents='auto';if(node===heading)node.dataset.newsHeading='';node.addEventListener('click',open);node.addEventListener('keydown',e=>{if(e.key==='Enter')open();});});}});
+// Images, headings and buttons are native article links. The remaining card
+// area follows the same destination without intercepting controls or selection.
+document.querySelectorAll<HTMLElement>('[data-news-href]').forEach(card=>{
+ card.style.cursor='pointer';
+ card.addEventListener('click',event=>{
+  if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||(event.target as Element).closest('a,button,input,select,textarea,[role=button]')||getSelection()?.toString())return;
+  location.assign(card.dataset.newsHref!);
+ });
+});
 
 // A single page of supplied records does not create fictitious additional pages.
 document.querySelectorAll<HTMLElement>('[data-pagination]').forEach(nav=>{const buttons=Array.from(nav.querySelectorAll<HTMLButtonElement>('[data-page-button]'));buttons.forEach(button=>{const number=Number(button.dataset.pageButton);if(number>1){button.disabled=true;button.setAttribute('aria-disabled','true');}else{button.setAttribute('aria-current','page');button.addEventListener('click',()=>{const u=new URL(location.href);u.searchParams.set('page','1');history.replaceState(null,'',u);(cards[0]??canvas)?.scrollIntoView({behavior:motion(),block:'start'});});}});});

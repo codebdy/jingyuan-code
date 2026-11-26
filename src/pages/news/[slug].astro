@@ -1,0 +1,53 @@
+---
+import '@fontsource-variable/inter-tight';
+import '../../styles/home.css';
+import '../../styles/design.css';
+import '../../styles/news-detail.css';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteInteractions from '../../components/SiteInteractions.astro';
+import Asset from '../../components/Asset.astro';
+import Action from '../../components/Action.astro';
+import { newsArticles, newsPath } from '../../data/news-articles';
+export function getStaticPaths() {
+  return newsArticles.map((article,index)=>({params:{slug:article.slug},props:{article,previous:newsArticles[index-1],next:newsArticles[index+1]}}));
+}
+const {article,previous,next}=Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="description" content={article.description}/>
+    <title>{article.title} | Xinjingyuan Cable News</title>
+  </head>
+  <body class="news-detail-body">
+    <div class="site" id="top">
+      <SiteHeader theme="plain"/>
+      <main class="news-detail" aria-labelledby="article-title">
+        <div class="container">
+          <nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/news/">News</a><span aria-hidden="true">/</span><span aria-current="page">Article</span></nav>
+          <article>
+            <header class="article-header">
+              <div><p class="article-eyebrow">News &amp; Insights</p><h1 id="article-title" data-title-reveal>{article.title}</h1></div>
+              <dl class="article-meta"><div><dt>Published</dt><dd><time datetime={article.date}>{article.displayDate}</time></dd></div><div><dt>News Type</dt><dd>{article.category}</dd></div></dl>
+            </header>
+            <figure class="article-cover" data-reveal-block data-reveal-kind="image"><Asset file={article.image} alt={article.title} loading="eager"/></figure>
+            <div class="article-reading">
+              <p class="article-section-label">News Details</p>
+              <div class="article-prose" data-reveal-block data-reveal-kind="copy">{article.body.map(paragraph=><p>{paragraph}</p>)}</div>
+              <a class="article-back" href="/news/"><span aria-hidden="true">←</span> Back to News</a>
+            </div>
+          </article>
+          <nav class="article-pagination" aria-label="Article navigation">
+            {[{item:previous,rel:'prev',label:'Previous Article',empty:'No previous article'},{item:next,rel:'next',label:'Next Article',empty:'No next article'}].map(({item,rel,label,empty})=>item?<a class="article-neighbour" href={newsPath(item.title)} rel={rel} data-reveal-card data-reveal-group="article-pagination"><span class="article-neighbour-label">{label}<span class:list={['article-neighbour-arrow',{'is-previous':rel==='prev'}]} aria-hidden="true"><Asset file="6c854.svg"/></span></span><h2>{item.title}</h2><time datetime={item.date}>{item.displayDate}</time></a>:<div class="article-neighbour is-unavailable" aria-disabled="true" data-reveal-card data-reveal-group="article-pagination"><span class="article-neighbour-label">{label}</span><p>{empty}</p></div>)}
+          </nav>
+        </div>
+      </main>
+      <footer class="article-footer">
+        <div class="container"><div class="article-footer-top"><div><p>Let's Build</p><h2>Connections.</h2></div><Action href="/contact/" label="Discuss Your Project" icon="1a143.svg"/></div><div class="article-footer-bottom"><a href="/" aria-label="Xinjingyuan Cable — Home"><img src="/branding/xinjingyuan-logo-white.svg" width="56" height="56" alt="Xinjingyuan Cable"/></a><p>© {new Date().getFullYear()} Xinjingyuan Cable</p><a href="#top" data-back-top aria-label="Back to top">Back to top ↑</a></div></div>
+      </footer>
+    </div>
+    <SiteInteractions/>
+  </body>
+</html>

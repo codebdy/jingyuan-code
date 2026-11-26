@@ -67,3 +67,7 @@ SVG 箭头、搜索、询盘、勾选、回顶与分隔线也来自原稿，未�
 ## 2026-11-26 品牌更名的 Logo 引用
 
 - Logo 图案及透明处理保持原样，素材文件改名为 public/branding/xinjingyuan-logo-white.svg 和 xinjingyuan-logo-source.png，SVG 标题及网页替代文字改为 Xinjingyuan Cable。未生成或修改图案。
+
+## 2026-11-26 新闻详情复用原图
+
+- 新增新闻详情使用现有首页的 5caab.png、e48f5.png、82fea.png 作为对应文章主图，通过 Asset 组件引用原素材；没有生成图片或使用外部图库。标题、摘要、日期与类型均沿用已提供内容。
