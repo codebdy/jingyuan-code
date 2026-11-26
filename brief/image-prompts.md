@@ -63,3 +63,7 @@ SVG 箭头、搜索、询盘、勾选、回顶与分隔线也来自原稿，未�
 - 原图：用户提供 codex-clipboard-2e4081ae-4177-40fd-99c2-775fe4b6b290.png，原样保存在 public/branding/jingyuan-logo-source.png。
 - 尝试内置 imagegen，提示为“原图精确去底，所有灰色 Logo 转为纯白，保留轮廓及注册标记，透明背景，无杂点、不重设计”。两次生成结果出现杂点，未用于网站。
 - 最终素材 public/branding/jingyuan-logo-white.svg 直接内嵌原 PNG，通过 SVG 颜色/透明度矩阵将灰色笔画转为纯白、白底及内部空白转为透明，保留原始像素轮廓；viewBox 24 30 196 200 裁去多余白边。非 AI 重绘，未修改原图。
+
+## 2026-11-26 品牌更名的 Logo 引用
+
+- Logo 图案及透明处理保持原样，素材文件改名为 public/branding/xinjingyuan-logo-white.svg 和 xinjingyuan-logo-source.png，SVG 标题及网页替代文字改为 Xinjingyuan Cable。未生成或修改图案。

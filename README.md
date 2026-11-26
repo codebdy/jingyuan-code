@@ -75,6 +75,8 @@
 
 每次修改后先构建并检查本地预览，再提交并推送到 main。node_modules、dist、.astro、本地 .env 及日志不提交；空白的 .env.example 用于说明可选询盘接收配置。图片、动图、视频和已完成页面源码随仓库保存，无需依赖本机 Downloads 目录。
 
-全站导航 Home 已替换为用户提供的透明 Logo：`public/branding/jingyuan-logo-white.svg`，原图保存在同目录的 `jingyuan-logo-source.png`。标志保留原轮廓，电脑 56px、手机 44px，点击返回首页；不依赖本机临时文件或生成图片目录。
+全站导航 Home 已替换为用户提供的透明 Logo：`public/branding/xinjingyuan-logo-white.svg`，原图保存在同目录的 `xinjingyuan-logo-source.png`。标志保留原轮廓，电脑 56px、手机 44px，点击返回首页；不依赖本机临时文件或生成图片目录。
 
 首页 Logo 打开时为黑色，滚动后在黑色导航上显示白色，返回顶部恢复；内页保持白色以配合原有背景。
+
+网站英文品牌名称统一为 **Xinjingyuan Cable**，正文、导航、页面标题、图片说明及邮件占位文字同步更新；源码仓库仍为 codebdy/jingyuan-code。

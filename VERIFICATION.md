@@ -342,3 +342,10 @@
 - 默认状态仅将底部 Discuss Your Project 的原箭头图标滤为黑色；灰底黑字、箭头尺寸/移动和联系链接保留，悬停/键盘焦点沿用橙底白字白箭头。
 - 构建通过，14 页输出成功；Chrome 检查 14 页 × 1920 / 390px 共 28 组，默认黑箭头、悬停还原及移出恢复均通过，截图已核对。
 - 临时检查 /private/tmp/jingyuan-qa/verify-footer-arrow.mjs，截图 footer-arrow-black-{1920,390}.png。
+
+## 2026-11-26 全站品牌改为 Xinjingyuan
+
+- 全站展示文案完成 251 处 Jingyuan / JINGYUAN 替换，包含导航、正文、版权、元信息、图片说明与邮箱占位；Logo 素材名称及 SVG 标题同步，项目 package 名称改为 xinjingyuan-cable。保留实际项目目录、GitHub 仓库及询盘草稿键兼容性。
+- `pnpm build` 通过，生成 14 页；逐页解析构建 HTML 的展示文本及标题/描述/alt/aria-label/mailto，未发现旧品牌独立名称。逐项比较设计 JSON，确认仅发生品牌文字变化，无布局或素材裁切调整。
+- Chrome 14 页 × 1920 / 1280 / 390px 共 42 组检查通过：新品牌、Logo 加载、导航间距、页脚与页面标题、无旧展示文字、四项优势动态文案及询价弹窗，无页面脚本错误；桌面截图已核对。
+- 临时检查脚本 /private/tmp/jingyuan-qa/verify-xinjingyuan.mjs，截图 xinjingyuan-home-{1920,1280,390}.png。导入脚本中的默认图片说明与页面标题同步更新，但未执行重新导入。

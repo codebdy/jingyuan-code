@@ -22,7 +22,7 @@ function decorate(page){
    mark(n,'loading','lazy');mark(n,'decoding','async');
    const basename=n.attrs.src?.split('/').at(-1)??'';
    mark(n,basename.endsWith('.svg')?'data-vector':'data-photo');
-   if(!n.attrs.alt&&!basename.endsWith('.svg'))mark(n,'alt',n.attrs['data-name']??'Jingyuan Cable product and manufacturing photograph');
+   if(!n.attrs.alt&&!basename.endsWith('.svg'))mark(n,'alt',n.attrs['data-name']??'Xinjingyuan Cable product and manufacturing photograph');
    continue;
   }
   if(n.tag!=='p'||!text)continue;

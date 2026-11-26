@@ -11,5 +11,5 @@ export function getStaticPaths(){const all=Object.values(import.meta.glob('../da
 const {page}=Astro.props;
 ---
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex, nofollow"/><meta name="description" content={page.description??`${page.title} — Jingyuan Cable products, manufacturing and professional service.`}/><title>{page.title} | Jingyuan Cable</title></head>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex, nofollow"/><meta name="description" content={page.description??`${page.title} — Xinjingyuan Cable products, manufacturing and professional service.`}/><title>{page.title} | Xinjingyuan Cable</title></head>
 <body class="design-body"><div class="site" id="top"><SiteHeader theme={page.slug.startsWith('products/jy-')?'plain':'photo'}/><main class="design-canvas" data-page={page.slug} data-product-model={page.productModel} data-figma-id={page.id} style={`height:calc(${page.height} * var(--u))`}><DesignNode node={page.root} productCenter={page.slug==='products'}/></main></div><SiteInteractions/></body></html>

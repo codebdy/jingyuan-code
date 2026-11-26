@@ -6,7 +6,7 @@ import InquiryDialog from './InquiryDialog.astro';
 const {theme='home'}=Astro.props;
 ---
 <header class:list={['header',`header--${theme}`]} data-node-id="75:27">
-  <a class="nav-logo" href="/" aria-label="Jingyuan Cable — Home" aria-current={Astro.url.pathname==='/'?'page':undefined}><img src="/branding/jingyuan-logo-white.svg" alt="Jingyuan Cable" width="196" height="200" /></a>
+  <a class="nav-logo" href="/" aria-label="Xinjingyuan Cable — Home" aria-current={Astro.url.pathname==='/'?'page':undefined}><img src="/branding/xinjingyuan-logo-white.svg" alt="Xinjingyuan Cable" width="196" height="200" /></a>
   <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">Menu <span>+</span></button>
   <nav aria-label="Main navigation" id="primary-navigation">
     {navigation.filter(({slug})=>slug!=='home').map(({ label, slug }) => slug==='products'?<span class="nav-products"><a href="/products/" aria-current={Astro.url.pathname.startsWith('/products/')?'page':undefined}>{label}</a><div class="product-menu">{categories.map(category=><a href={`/products/category/?category=${encodeURIComponent(category)}`}>{category}</a>)}</div></span>:<a href={`/${slug}/`} aria-current={Astro.url.pathname.startsWith(`/${slug}/`)?'page':undefined}>{label}</a>)}
