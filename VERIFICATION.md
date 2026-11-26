@@ -324,3 +324,9 @@
 - 临时检查脚本 /private/tmp/jingyuan-qa/verify-navigation-logo.mjs，截图 navigation-logo-{home,scrolled}-{1920,1280,390,320}.png。现有 verify-home-backtop.mjs 已更新为 Logo 返回首页入口。
 - 用户随后要求首页初始黑色、下滑后白色并放大。最终 Logo 图框为电脑 56px（随 --u 缩放）、手机 44px；首页顶部 brightness(0)，黑色吸附栏恢复白色，返回顶部恢复黑色，内页保持白色。再次完成上述 56 组检查并核对最终截图，放大后无遮挡/重叠。
 - 既有 verify-home-backtop.mjs 28 组及平滑滚动、键盘、无脚本场景通过；最终构建再次输出 14 页。
+
+## 2026-11-26 底部联系按钮改为默认黑色
+
+- 按最新要求将首页和内页共用底部 CTA 及独立背景层的默认背景由 #BABABA 改为 #000000，悬停和键盘焦点仍为 #E0452D。
+- 构建通过，生成 14 页。本地 Chrome 验证 14 页 × 1920 / 390px 共 28 组：黑色默认态、橙色悬停/焦点、移出恢复黑色及原联系链接，全部通过。
+- 临时验证脚本 /private/tmp/jingyuan-qa/verify-footer-black.mjs。
