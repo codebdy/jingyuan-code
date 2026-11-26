@@ -9,10 +9,14 @@
 /* Shared footer CTA, including the separate Figma background layer. */
 .action[data-footer-inquiry],
 .design-canvas .dnode[data-action][data-footer-inquiry],
-.design-canvas .dnode[data-action][data-footer-inquiry]>[data-button-background]{background:#000!important}
+.design-canvas .dnode[data-action][data-footer-inquiry]>[data-button-background]{background:#bababa!important}
+.action[data-footer-inquiry],
+.design-canvas .dnode[data-action][data-footer-inquiry]{color:#000!important}
 .action[data-footer-inquiry]:is(:hover,:focus-visible),
 .design-canvas .dnode[data-action][data-footer-inquiry]:is(:hover,:focus-visible),
 .design-canvas .dnode[data-action][data-footer-inquiry]:is(:hover,:focus-visible)>[data-button-background]{background:var(--orange)!important}
+.action[data-footer-inquiry]:is(:hover,:focus-visible),
+.design-canvas .dnode[data-action][data-footer-inquiry]:is(:hover,:focus-visible){color:#fff!important}
 /* Keep the navigation search field borderless when focused as well. */
 .navigation-search input,
 .navigation-search input:is(:focus,:focus-visible){border:0;outline:none;box-shadow:none}
