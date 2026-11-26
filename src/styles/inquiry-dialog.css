@@ -1,0 +1,23 @@
+.inquiry-dialog{position:fixed;inset:0;width:min(680px,calc(100vw - 48px));max-width:none;max-height:calc(100dvh - 48px);height:max-content;margin:auto;padding:40px;border:0;background:#fff;color:#1d2023;overflow:auto;font-size:16px;line-height:1.4;letter-spacing:-.02em}
+.inquiry-dialog::backdrop{background:#000b}
+.inquiry-dialog h2{margin:0 32px 28px 0;font-size:32px;line-height:1.15;letter-spacing:-.045em;font-weight:700}
+.inquiry-dialog .dialog-close{position:absolute;right:14px;top:10px;width:32px;height:32px;font-size:28px;line-height:1;display:grid;place-items:center}
+.inquiry-dialog-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.inquiry-dialog label{display:block;font-size:14px;line-height:1.4}
+.inquiry-dialog label>span{color:var(--orange)}
+.inquiry-dialog :is(input,textarea){display:block;width:100%;min-width:0;margin-top:8px;padding:13px 14px;border:0;border-radius:0;background:#f2f2f2;color:#1d2023;font:inherit;font-size:16px;line-height:1.4;box-shadow:none}
+.inquiry-dialog :is(input,textarea):focus{outline:1px solid #4c4c4c;outline-offset:0}
+.inquiry-dialog textarea{resize:vertical;min-height:110px;max-height:240px}
+.inquiry-dialog-message{grid-column:1/-1}
+.inquiry-dialog-submit{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:48px;margin-top:24px;padding:12px 20px;background:#1d2023;color:#fff;font-size:16px;transition:background-color .24s ease,color .24s ease}
+.inquiry-dialog-submit img{width:16px;height:16px;filter:brightness(0) invert(1);transition:translate .24s ease}
+.inquiry-dialog-submit:is(:hover,:focus-visible){background:var(--orange);color:#000}
+.inquiry-dialog-submit:is(:hover,:focus-visible) img{filter:brightness(0);translate:3px 0}
+.inquiry-dialog-submit:disabled{cursor:wait;opacity:.6}
+.inquiry-dialog .inquiry-status{margin:16px 0 0;padding:12px;background:#f2f2f2;font-size:14px;line-height:1.5}
+.inquiry-dialog :is(button,a):focus-visible{outline:2px solid #4c4c4c;outline-offset:3px}
+.inquiry-dialog[open]{animation:inquiry-enter .28s ease-out}
+html:has(.inquiry-dialog[open]){overflow:hidden}
+@keyframes inquiry-enter{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}
+@media(max-width:800px){.inquiry-dialog{width:calc(100vw - 32px);max-height:calc(100dvh - 32px);padding:28px 24px}.inquiry-dialog h2{font-size:28px;margin-bottom:24px}.inquiry-dialog-fields{grid-template-columns:1fr;gap:16px}}
+@media(prefers-reduced-motion:reduce){.inquiry-dialog[open]{animation:none}.inquiry-dialog-submit,.inquiry-dialog-submit img{transition:none}.inquiry-dialog-submit:is(:hover,:focus-visible) img{translate:none}}

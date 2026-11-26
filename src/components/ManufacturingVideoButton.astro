@@ -1,0 +1,100 @@
+---
+import { manufacturingVideoSrc, manufacturingOverviewVideoSrc } from '../data/manufacturing-video';
+interface Props { placement?: 'hero' | 'inline' }
+const { placement = 'hero' } = Astro.props;
+const inline = placement === 'inline';
+const src = inline ? manufacturingOverviewVideoSrc : manufacturingVideoSrc;
+const title = inline ? 'Company Presentation Video' : 'Manufacturing Video';
+---
+<button class:list={['manufacturing-video-button', { 'manufacturing-video-button--inline': inline }]} type="button" aria-label={inline ? 'Play company presentation video' : 'Play manufacturing video'} aria-haspopup="dialog" data-manufacturing-video data-video-title={title} data-video-src={src || undefined}>
+  <svg class="manufacturing-original-artwork" viewBox="0 0 80 80" aria-hidden="true">
+    {inline && <circle class="manufacturing-original-circle" cx="40" cy="40" r="40" fill="white" fill-opacity=".1"/>}
+    <path class="manufacturing-original-play" transform="translate(-1.5 0)" d="M47 41.7321C48.3333 40.9623 48.3333 39.0377 47 38.2679L38 33.0718C36.6667 32.302 35 33.2642 35 34.8038V45.1962C35 46.7358 36.6667 47.698 38 46.9282L47 41.7321Z" fill="currentColor"/>
+  </svg>
+</button>
+<style>
+  :global(.design-canvas) .manufacturing-video-button {
+    position: absolute;
+    left: 50%;
+    top: 46.875%;
+    translate: -50% -50%;
+    width: clamp(56px, calc(80 * var(--u)), 80px);
+    height: clamp(56px, calc(80 * var(--u)), 80px);
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: var(--orange);
+    background: var(--video-button-bg, rgb(76 76 76 / .55));
+    backdrop-filter: blur(var(--video-button-blur, 4px));
+    cursor: pointer;
+    z-index: 1;
+    scale: 1;
+    transition: background-color 320ms ease;
+  }
+  .manufacturing-video-button::before, .manufacturing-video-button::after {
+    content: ''; position: absolute; inset: 0; border: 1px solid rgb(255 255 255 / .24);
+    border-radius: 50%; pointer-events: none; opacity: 0; box-sizing: border-box;
+  }
+  :global(.design-canvas) .manufacturing-video-button:focus-visible { outline: 2px solid var(--orange); outline-offset: 5px; background: var(--video-button-hover-bg, rgb(100 100 100 / .72)); }
+  .manufacturing-video-button:focus-visible::before, .manufacturing-video-button:focus-visible::after { animation: video-edge-ripple 2200ms ease-out infinite; }
+  :global(.design-canvas) .manufacturing-video-button--inline {
+    --video-button-bg: transparent; --video-button-hover-bg: transparent; --video-button-blur: 11.5px;
+    inset: 0; translate: none; width: 100%; height: 100%;
+  }
+  .manufacturing-original-artwork { position: relative; width: 100%; height: 100%; pointer-events: none; }
+  .manufacturing-original-circle { transition: fill-opacity 320ms ease; }
+  .manufacturing-video-button:focus-visible .manufacturing-original-circle { fill-opacity: .18; }
+  @media (hover: hover) {
+    :global(.design-canvas) .manufacturing-video-button:hover { background: var(--video-button-hover-bg, rgb(100 100 100 / .72)); }
+    .manufacturing-video-button:hover::before, .manufacturing-video-button:hover::after { animation: video-edge-ripple 2200ms ease-out infinite; }
+    .manufacturing-video-button:hover .manufacturing-original-circle { fill-opacity: .18; }
+  }
+  .manufacturing-video-button:focus-visible::after { animation-delay: 1100ms; }
+  @media (hover: hover) { .manufacturing-video-button:hover::after { animation-delay: 1100ms; } }
+  @keyframes video-edge-ripple {
+    from { transform: scale(1); opacity: .45; }
+    to { transform: scale(1.24); opacity: 0; }
+  }
+  :global(.design-canvas) .manufacturing-video-button:active { scale: .98; }
+  @media (max-width: 800px) {
+    :global(.design-canvas) .manufacturing-video-button { width: 56px; height: 56px; }
+    :global(.design-canvas) .manufacturing-video-button--inline { width: 100%; height: 100%; }
+    :global(.design-canvas .dnode[data-video-trigger-slot]) { position: absolute !important; left: 16px !important; top: 16px !important; width: 56px !important; height: 56px !important; z-index: 2; }
+    :global(.design-canvas .dnode[data-video-copy]) { position: static !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(.design-canvas) .manufacturing-video-button { scale: 1 !important; transition: none; }
+    .manufacturing-video-button::before, .manufacturing-video-button::after { animation: none !important; opacity: 0 !important; }
+  }
+</style>
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-manufacturing-video]');
+  const dialog = document.querySelector<HTMLDialogElement>('#media-dialog');
+  if (dialog) {
+    buttons.forEach(button => button.addEventListener('click', () => {
+      const content = dialog.querySelector<HTMLElement>('#media-dialog-content')!;
+      dialog.querySelector<HTMLElement>('#media-dialog-title')!.textContent = button.dataset.videoTitle || 'Video';
+      dialog.querySelector<HTMLImageElement>('#media-dialog-image')!.hidden = true;
+      dialog.querySelectorAll<HTMLElement>('[data-gallery-prev],[data-gallery-next],#media-download').forEach(item => item.hidden = true);
+      dialog.querySelector<HTMLAnchorElement>('[data-preview-inquiry]')!.href = '/contact/';
+      content.replaceChildren();
+      if (button.dataset.videoSrc) {
+        const video = document.createElement('video');
+        video.src = button.dataset.videoSrc;
+        video.controls = true;
+        video.playsInline = true;
+        video.preload = 'metadata';
+        video.style.cssText = 'display:block;width:100%;max-height:70vh';
+        content.append(video);
+      } else {
+        const note = document.createElement('p');
+        note.textContent = 'The video will be available soon.';
+        content.append(note);
+      }
+      dialog.showModal();
+    }));
+    dialog.addEventListener('close', () => dialog.querySelector<HTMLVideoElement>('video')?.pause());
+  }
+</script>

@@ -1,0 +1,36 @@
+---
+import '../styles/site-header.css';
+import { navigation } from '../data/navigation';
+import { categories } from '../data/home';
+import InquiryDialog from './InquiryDialog.astro';
+const {theme='home'}=Astro.props;
+---
+<header class:list={['header',`header--${theme}`]} data-node-id="75:27">
+  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">Menu <span>+</span></button>
+  <nav aria-label="Main navigation" id="primary-navigation">
+    {navigation.map(({ label, slug }) => slug==='products'?<span class="nav-products"><a href="/products/" aria-current={Astro.url.pathname.startsWith('/products/')?'page':undefined}>{label}</a><div class="product-menu">{categories.map(category=><a href={`/products/category/?category=${encodeURIComponent(category)}`}>{category}</a>)}</div></span>:<a href={slug==='home'?'/':`/${slug}/`} aria-current={(slug==='home'?Astro.url.pathname==='/':Astro.url.pathname.startsWith(`/${slug}/`))?'page':undefined}>{label}</a>)}
+  </nav>
+  <div class="header-tools">
+    <button type="button" class="search-shortcut" aria-label="Search cable products" data-nav-search><span class="nav-search-icon" aria-hidden="true"></span></button>
+    <a class="inquiry" href="/contact/" data-nav-inquiry aria-haspopup="dialog" aria-controls="navigation-inquiry">Inquiry <span class="message-icon" aria-hidden="true"></span></a>
+  </div>
+</header>
+<InquiryDialog />
+<dialog class="navigation-search" id="navigation-search" aria-labelledby="navigation-search-title"><button type="button" class="dialog-close" aria-label="Close search">×</button><h2 id="navigation-search-title">Find the Right Cable.</h2><form action="/products/category/" method="get"><label for="navigation-search-input">Model, product name or keywords</label><div><input id="navigation-search-input" name="q" type="search" placeholder="YJV, MI, KVV…" required/><button type="submit">Search →</button></div></form></dialog>
+<script>
+  const header = document.querySelector<HTMLElement>('.header')!;
+  let scheduled = false;
+  const updateHeader = () => { header.classList.toggle('is-scrolled', window.scrollY > 24); scheduled = false; };
+  addEventListener('scroll', () => { if (!scheduled) { scheduled = true; requestAnimationFrame(updateHeader); } }, { passive: true });
+  addEventListener('pageshow', updateHeader);
+  updateHeader();
+  const menu = document.querySelector<HTMLButtonElement>('.menu-toggle')!;
+  menu.addEventListener('click', () => {
+    menu.setAttribute('aria-expanded', String(menu.getAttribute('aria-expanded') !== 'true'));
+  });
+  header.addEventListener('keydown', event => { if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { menu.setAttribute('aria-expanded', 'false'); menu.focus(); } });
+  document.querySelectorAll('#primary-navigation a').forEach(link => link.addEventListener('click', () => menu.setAttribute('aria-expanded', 'false')));
+  const searchDialog=document.querySelector<HTMLDialogElement>('#navigation-search')!;
+  document.querySelector('[data-nav-search]')?.addEventListener('click',()=>searchDialog.showModal());
+  searchDialog.querySelector('button.dialog-close')?.addEventListener('click',()=>searchDialog.close());
+</script>

@@ -1,0 +1,15 @@
+/* Shared by the home, catalog and about-page application cards. Keep the
+   original text available, reserving exactly three lines for the summary. */
+.solution-description,
+.design-canvas .dnode[data-application-description]{
+  display:-webkit-box!important;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  line-height:calc(18 * var(--u))!important;
+  height:calc(54 * var(--u))!important;
+  min-height:calc(54 * var(--u))!important;
+  max-height:calc(54 * var(--u))!important;
+  flex:none!important;
+}

@@ -1,0 +1,164 @@
+---
+import '@fontsource-variable/inter-tight';
+import '../styles/home.css';
+import '../styles/design.css';
+import SiteInteractions from '../components/SiteInteractions.astro';
+import Asset from '../components/Asset.astro';
+import Action from '../components/Action.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import HeroTitle from '../components/HeroTitle.astro';
+import HeroCable from '../components/HeroCable.astro';
+import { categories, products, solutions, processes, news } from '../data/home';
+import { productPath } from '../data/product-links';
+
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jingyuan Cable — dependable cable solutions for buildings, industry, transportation and energy." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#e0452d" />
+    <title>Jingyuan Cable | Made For Reliability.</title>
+  </head>
+  <body>
+    <div class="site" id="top" data-home>
+      <SiteHeader />
+      <main>
+        <section class="hero" aria-labelledby="hero-title" data-node-id="75:29">
+          <div class="hero-main" data-node-id="75:28">
+            <HeroCable />
+            <div class="hero-copy" data-node-id="50:8">
+              <HeroTitle />
+              <p class="hero-description" data-node-id="33:101">We are committed to delivering dependable cable solutions through quality-focused manufacturing, consistent performance, and professional service.</p>
+              <Action variant="large banner-action" icon="a0cd2.svg" />
+            </div>
+          </div>
+          <div class="hero-photo" data-node-id="33:97"><video controls muted loop playsinline preload="metadata" poster="/videos/home-braided-cable-poster.webp" aria-label="Braided cable presentation"><source src="/videos/home-braided-cable.mp4" type="video/mp4" /><a href="/videos/home-braided-cable.mp4">Watch the cable video</a></video></div>
+          <aside class="hero-aside" aria-label="Cable products and selection">
+            <div class="hero-features" data-node-id="75:26">
+              <div><h2>Product Solutions</h2><p>Cable solutions for diverse industrial and project requirements.</p></div>
+              <div><h2>Manufacturing Expertise</h2><p>Focused production processes with attention to quality and consistency.</p></div>
+              <div><h2>Trusted Partnership</h2><p>Professional service and long-term cooperation with customers.</p></div>
+            </div>
+            <div class="category-panel" data-node-id="75:25">
+              <h2>Product Categories</h2>
+              <div class="category-list">
+                {categories.map((category, i) => <details class="category" name="product-category" open={i === 2}>
+                  <summary><span class="category-number">{String(i + 1).padStart(2, '0')}.</span><span>{category}</span><span class="plus" aria-hidden="true">+</span></summary>
+                  <div class="category-content">{(i === 2 ? ['Mineral insulation', 'Mineral insulation', 'Emergency power supply'] : [category]).map(label => <a href={`/products/category/?category=${encodeURIComponent(category)}`}><Asset file="c24f2.svg" />{label}</a>)}</div>
+                </details>)}
+              </div>
+              <div class="selection-search" id="selection-guide">
+                <h2>Start by looking for it based on the model or the usage scenario.</h2>
+                <form role="search" class="search-form" id="product-search">
+                  <label class="sr-only" for="search-input">Model, product name or keywords</label>
+                  <input id="search-input" type="search" name="q" placeholder="Please enter the key words." autocomplete="off" />
+                  <button type="submit" aria-label="Search products"><Asset file="13657.svg" /></button>
+                </form>
+                <p class="search-hint">Enter the model number, product name or key words, such as YJV, BV, control cable.</p>
+                <div class="search-scenarios">
+                  {['Low-voltage power distribution', 'Control and signal connection', 'Building wiring', 'Fire protection and low-smoke, low-halogen'].map(label => <button type="button" data-search={label}>{label}</button>)}
+                </div>
+              </div>
+            </div>
+            <a class="selection-guide" href="/support/" data-node-id="75:23"><span>Don't know the model?<br />Check the selection guide.</span><Asset file="b462c.svg" /></a>
+          </aside>
+        </section>
+        <section class="products" id="products" aria-labelledby="products-title" data-node-id="107:152">
+          <div class="container">
+            <div class="section-intro"><h2 id="products-title">Explore Our Cable Range</h2><p>Find the right cable solutions for your projects through our comprehensive range of product categories and specifications.</p></div>
+            <p id="search-status" class="search-status" role="status" hidden></p>
+            <div class="product-grid">
+              {products.map((product, i) => <article class:list={['product-card', `product-${i + 1}`]} id={`product-${product.id}`} data-product-href={productPath(product.model)} data-keywords={`${product.model} ${product.type} ${product.keywords}`} data-node-id={product.node}>
+                <div class="product-visual"><a class="product-image" href={productPath(product.model)} aria-label={`View ${product.model}`}><Asset file={product.image} alt={product.model + ' cable cross section'} /></a><span class="product-tag">{product.tag}</span><a class="product-plus" href={productPath(product.model)} aria-label={`View ${product.model} details`}>+</a></div>
+                <div class="product-information"><div class="product-heading"><p>{product.type}</p><h3><a href={productPath(product.model)}>{product.model}</a></h3></div>
+                  <dl class="specifications">{product.specs.map(([key, value]) => <div><div class="specification-row"><dt>{key}</dt><dd>{value}</dd></div><Asset file="3d36b.svg" class="spec-line" /></div>)}</dl>
+                  <a class="text-link" href={productPath(product.model)}>Read More <span class="diagonal"><Asset file="79b79.svg" /></span></a>
+                </div>
+              </article>)}
+            </div>
+          </div>
+        </section>
+        <section class="solutions" id="applications" aria-labelledby="solutions-title" data-node-id="89:273">
+          <div class="container"><div class="solutions-intro"><h2 id="solutions-title">Cable <span>Solutions</span></h2><h3 data-title-reveal-after="solutions-title">Reliable Products. Purposeful Connections.</h3><p>Explore our range of cable products designed for power transmission, electrical installation, industrial control, and specialized application requirements.</p></div>
+            <div class="solutions-grid">
+              <Asset file="9501d.svg" class="solutions-line solutions-line-top" /><Asset file="9501d.svg" class="solutions-line solutions-line-header" /><Asset file="9501d.svg" class="solutions-line solutions-line-bottom" />
+              {solutions.map((solution, i) => <article class:list={['solution-card', { featured: i === 1 }]} id={`solution-${i + 1}`}>
+                <Asset file="3b066.svg" class="solution-vertical" />
+                <div class="solution-label"><span>{i === 1 && <i aria-hidden="true" />}{solution.label}</span><span>[ {i + 1} ]</span></div>
+                <div class="solution-image" data-node-id={solution.node}><Asset file="4b6a9.png" alt={solution.label + ' illustration'} style={`left: ${solution.offset}`} /></div>
+                <div class="solution-copy"><h3>{solution.title}</h3><p class="solution-description">{solution.description}</p><div class="tags">{solution.tags.map(tag => <span>{tag}</span>)}</div><div class="solution-specs"><p>Conductor Material: Copper / Aluminum Alloy (depending on product series)</p><Asset file="d0e0b.svg" /><p>Conductor Structure: Single Core / Multi-Core</p><Asset file="d0e0b.svg" /></div></div>
+                <Action href={`/applications/?sector=${encodeURIComponent(solution.label)}`} icon={i === 1 ? '1ae74.svg' : '6c854.svg'} />
+              </article>)}
+              <Asset file="3b066.svg" class="solution-vertical solution-vertical-end" />
+            </div>
+          </div>
+        </section>
+        <section class="manufacturing" id="manufacturing" aria-labelledby="manufacturing-title" data-node-id="128:465">
+          <div class="wireframe" aria-hidden="true" data-node-id="128:463"><div class="wireframe-base"><Asset file="db1ff.png" /></div><div class="wireframe-invert"></div><div class="wireframe-mask mask-1"></div><div class="wireframe-mask mask-2"></div><div class="wireframe-mask mask-3"></div><div class="wireframe-mask mask-4"></div></div>
+          <div class="container"><div class="section-intro manufacturing-intro"><h2 id="manufacturing-title">From The Production Process To The<br />Final Product Inspection.</h2><p>Find the right cable solutions for your projects through our comprehensive range of product categories and specifications.</p></div>
+            <div class="process-list">{processes.map((process, i) => <article class:list={['process', `process-${i + 1}`]} data-node-id={process.node}><div class="process-label"><span>{String(i + 1).padStart(2, '0')}.</span><span>{process.label}</span><button type="button" class="process-toggle" aria-label={`Toggle ${process.title} details`} aria-expanded="true">+</button></div><h3>{process.title}</h3><div class="process-description"><p>{process.description}</p><p class="process-tags">{process.tags}</p></div></article>)}</div>
+            <div class="manufacturing-outro"><p>From conductor processing to final inspection, every manufacturing stage follows defined product requirements and process controls to support consistent cable quality.</p><Action href="/quality-manufacturing/" label="Understand quality manufacturing" /></div>
+          </div>
+        </section>
+        <section class="application-feature" aria-labelledby="application-title" data-node-id="271:366">
+          <div class="application-photo"><Asset file="b9ea2.png" alt="Cable drums at a manufacturing facility" /></div>
+          <div class="application-details"><div class="application-copy"><div><h2 id="application-title">Building &amp; Construction Solutions</h2><p>Provide cable selection references for residential, commercial buildings and public facilities, meeting the power distribution and installation requirements of different building scenarios.</p></div><div class="application-specifications"><div class="tags orange-tags"><span>Residential Buildings</span><span>Public Buildings</span><span>Infrastructure Projects</span></div><dl>{[
+            ['Project Needs', 'Building power distribution, indoor wiring, public facility power supply'], ['Recommended Products', 'Building Wires / Low Voltage Power Cables / LSZH Cables'], ['Key Selection Factors', 'Rated voltage, conductor material, insulating material, laying method'],
+          ].map(([key, value]) => <div><div class="application-spec-row"><dt>{key}</dt><dd>{value}</dd></div><Asset file="d3cb7.svg" /></div>)}</dl></div></div><div class="application-controls"><a href="/applications/" data-case-next><span>NEXT</span><span>INDUSTRIAL POWER SOLUTIONS</span></a><a href="/applications/" data-case-prev><span>PREV</span><span>ENERGY &amp; POWER DISTRIBUTION SOLUTIONS</span></a></div></div>
+        </section>
+        <section class="about" id="about" aria-labelledby="about-title" data-node-id="271:365"><div class="container">
+          <div class="about-intro"><div class="section-intro"><h2 id="about-title">Quality First,<br />Integrity In Business.</h2><p>From buildings and infrastructure to industrial facilities and energy systems, our cable solutions support reliable power transmission across a wide range of applications.</p></div><Action href="/about/" variant="large" label="Explore About Us" icon="91f28.svg" /></div>
+          <div class="about-statistics"><Asset file="9501d.svg" class="statistics-line top" /><Asset file="9501d.svg" class="statistics-line bottom" />{[
+            ['Market', '20+', 'Provinces & Regions', 'The product sales network covers more than 20 provinces, municipalities, and autonomous regions nationwide.'], ['Product', '12', 'Product Categories', 'Covering 12 major categories of wire and cable products'], ['Equipment', '3', 'Equipment Categories', 'Classification display of production equipment and testing equipment'],
+          ].map(([label, number, title, description]) => <div class="stat"><p class="stat-label">{label}</p><p class="stat-number" data-counter={number}>{number}</p><div><h3>{title}</h3><p class="stat-description">{description}</p></div></div>)}</div>
+          <div class="about-story-area"><div class="about-background" aria-hidden="true"><Asset file="d54f4.png" /></div><div class="story-column" id="company-story"><Asset file="8e486.svg" class="story-top-line" /><Asset file="3f1e6.svg" class="story-vertical story-left" /><Asset file="3f1e6.svg" class="story-vertical story-right" /><div class="story-copy"><h3>Built On Quality. Connected<br />By Trust.</h3><p>Jingyuan Cable is committed to manufacturing reliable wire and cable products for diverse industries. Through consistent quality control, professional manufacturing, and continuous improvement, we provide dependable cable solutions that support modern infrastructure and industrial development.</p></div><Asset file="about-cables.png" alt="Cables illuminated during inspection" class="story-photo" /><a href="/about/" class="text-link">Read More <span class="diagonal"><Asset file="79b79.svg" /></span></a></div></div>
+        </div></section>
+        <div class="closing" data-node-id="271:367">
+          <section class="news" id="news" aria-labelledby="news-title" data-node-id="190:350"><div class="container"><div class="news-heading"><h2 id="news-title">What's New</h2><div><h3 data-title-reveal-after="news-title">Discover What's Happening at Jingyuan.</h3><p>Explore our latest company updates, manufacturing developments, and milestones as we continue to advance cable solutions.</p><Action href="/about/" variant="large" icon="b483b.svg" label="Explore About Us" /></div></div><div class="news-grid"><Asset file="78b78.svg" class="news-line-top" /><Asset file="abce4.svg" class="news-line-bottom" />{news.map((item, i) => <article class:list={['news-card', { featured: i === 1 }]}><Asset file="fab86.svg" class="news-vertical" /><div class="news-image-container"><Asset file={item.image} alt={item.title} class="news-image" /></div><div class="news-meta"><span>October 20, 2026</span><span>Exhibition Information</span></div><div class="news-copy"><h3>{item.title}</h3><p>{item.description}</p></div><Action href="/news/" icon={item.icon} /></article>)}<Asset file="fab86.svg" class="news-vertical news-vertical-end" /></div></div></section>
+          <section class="contact" id="contact" aria-labelledby="contact-title"><div class="contact-art" aria-hidden="true"></div><div class="contact-intro"><h2 id="contact-title">Let's Build<br /><span>Connections.</span></h2><p>Looking for a trusted cable partner? Connect with Jingyuan Cable for dependable products and professional support.</p><Action href="/contact/" label="Discuss Your Project" icon="1a143.svg" /></div>
+            <div class="footer-links"><div><h3><span>01.</span>Main Product</h3><div>{['Low Voltage Power Cables', 'LSZH Cables', 'Mineral Insulated Cables', 'Building Wires', 'Aluminum Alloy Cables', 'Control Cables'].map(label => <a href="/products/category/">{label}</a>)}</div></div><div><h3><span>02.</span>Direction Of Application</h3><div>{['Building & Infrastructure', 'Industrial & Manufacturing', 'Transportation', 'Energy & Power'].map(label => <a href="/applications/">{label}</a>)}</div></div><div><h3><span>03.</span>Social Media</h3><div>{['Linkedin', 'Instegream', 'Facebook', 'Twitter', 'Youtube'].map(label => <button type="button" data-placeholder={label}>{label}</button>)}</div></div></div>
+            <div class="contact-information" id="contact-information"><div class="contact-card-art" aria-hidden="true"></div><h3>Let's Start a Conversation.</h3><p class="contact-card-description">Have a project in mind or need more information about our cable products? Get in touch with our team. We're ready to assist you.</p><dl><div><dt>Phone</dt><dd>+86 XXX XXXX XXXX</dd></div><div><dt>Email</dt><dd>sales@yourcompany.com</dd></div><div><dt>Address</dt><dd>Your Company Address, China</dd></div><div><dt>Business Hours</dt><dd><small>Monday – Friday</small><br />9:00 AM – 6:00 PM (GMT+8)</dd></div></dl></div>
+          </section>
+          <footer class="footer"><p>Copyright © 2026 Shandong Jingyuan Cable Co., Ltd. &nbsp;All Rights Reserved</p><div><span>Powewed By Alida</span><button type="button" data-placeholder="Privacy Policy">Privacy Policy</button></div><a href="#top" aria-label="Back to top" data-back-top><Asset file="fb11d.svg" /></a></footer>
+        </div>
+      </main>
+    </div>
+    <dialog id="information-dialog" aria-labelledby="information-title"><button type="button" class="dialog-close" aria-label="Close information">×</button><h2 id="information-title"></h2><p>This information has not been provided yet.</p></dialog>
+    <SiteInteractions />
+    <script>
+      const search = document.querySelector<HTMLInputElement>('#search-input')!;
+      const status = document.querySelector<HTMLElement>('#search-status')!;
+      function runSearch(value: string) {
+        search.value = value;
+        const words = value.toLowerCase().replace(/[-,&]/g, ' ').split(/\s+/).filter(word => word.length > 2);
+        let count = 0;
+        document.querySelectorAll<HTMLElement>('.product-card').forEach(card => { const match = !words.length || words.some(word => card.dataset.keywords!.toLowerCase().includes(word)); card.hidden = !match; if (match) count++; });
+        status.hidden = !value.trim(); status.textContent = count ? `${count} product${count === 1 ? '' : 's'} found. Clear the search to view all products.` : 'No matching products. Try YJV, MI or KVV.';
+        document.querySelector('#products')!.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+      }
+      document.querySelector('#product-search')!.addEventListener('submit', async event => {
+        event.preventDefault();
+        const target = `/products/category/?q=${encodeURIComponent(search.value)}`;
+        const icon = document.querySelector<HTMLElement>('#product-search button img');
+        if (icon?.animate && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          await icon.animate([{ translate: '0 0' }, { translate: '3px 0' }, { translate: '0 0' }], { duration: 220, easing: 'ease-in-out' }).finished.catch(() => {});
+        }
+        window.location.href = target;
+      });
+      search.addEventListener('input', () => { if (!search.value) { document.querySelectorAll<HTMLElement>('.product-card').forEach(card => card.hidden = false); status.hidden = true; } });
+      document.querySelectorAll<HTMLElement>('[data-search]').forEach(button => button.addEventListener('click', () => { window.location.href = `/products/category/?q=${encodeURIComponent(button.dataset.search!)}`; }));
+      const infoDialog = document.querySelector<HTMLDialogElement>('#information-dialog')!;
+      document.querySelectorAll<HTMLElement>('[data-placeholder]').forEach(button => button.addEventListener('click', () => { document.querySelector('#information-title')!.textContent = button.dataset.placeholder!; infoDialog.showModal(); }));
+      document.querySelectorAll<HTMLDialogElement>('dialog').forEach(dialog => { dialog.querySelector('.dialog-close')!.addEventListener('click', () => dialog.close()); dialog.addEventListener('click', event => { if (event.target === dialog) { const rect = dialog.getBoundingClientRect(); const { clientX: x, clientY: y } = event as MouseEvent; if (x < rect.left || x > rect.right || y < rect.top || y > rect.bottom) dialog.close(); } }); });
+      document.querySelectorAll<HTMLButtonElement>('.process-toggle').forEach((button,index) => {
+        const description=button.closest('.process')!.querySelector<HTMLElement>('.process-description')!;
+        const clip=document.createElement('div');clip.append(...description.childNodes);description.append(clip);
+        description.id='process-description-'+index;button.setAttribute('aria-controls',description.id);
+        button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));description.inert=!open;description.setAttribute('aria-hidden',String(!open));});
+      });
+    </script>
+  </body>
+</html>

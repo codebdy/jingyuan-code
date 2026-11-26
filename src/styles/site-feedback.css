@@ -1,0 +1,81 @@
+/* Quiet feedback that keeps Figma's dimensions, transforms and colour exceptions. */
+[data-card-feedback] :is([data-button-background],[data-preview-paint],[data-catalog-model-label],[data-product-center-name],[data-product-center-description]){transition:background-color .28s ease,color .28s ease}
+[data-card-feedback] [data-card-image] img{transition:transform .44s cubic-bezier(.25,.6,.3,1)}
+.design-canvas [data-card-feedback]:is(:hover,:focus-within) [data-action-kind=text]{color:var(--orange)!important}
+.design-canvas [data-card-feedback]:is(:hover,:focus-within) [data-button-background]{background:var(--orange)!important}
+.design-canvas [data-action]:is(:hover,:focus-visible)>[data-button-background]{background:var(--orange)!important}
+.design-canvas .dnode[data-action]:is(:hover,:focus-visible):not([data-action-kind=text]){background:var(--orange)!important}
+.design-canvas [data-card-feedback]:is(:hover,:focus-within) [data-action] img{translate:3px 0}
+/* Shared footer CTA, including the separate Figma background layer. */
+.action[data-footer-inquiry],
+.design-canvas .dnode[data-action][data-footer-inquiry],
+.design-canvas .dnode[data-action][data-footer-inquiry]>[data-button-background]{background:#bababa!important}
+.action[data-footer-inquiry]:is(:hover,:focus-visible),
+.design-canvas .dnode[data-action][data-footer-inquiry]:is(:hover,:focus-visible),
+.design-canvas .dnode[data-action][data-footer-inquiry]:is(:hover,:focus-visible)>[data-button-background]{background:var(--orange)!important}
+/* Keep the navigation search field borderless when focused as well. */
+.navigation-search input,
+.navigation-search input:is(:focus,:focus-visible){border:0;outline:none;box-shadow:none}
+.design-canvas [data-card-feedback] [data-news-heading]{transition:color .28s ease}
+.design-canvas [data-news-card]:focus-within [data-news-heading]{color:var(--orange)!important}
+.design-canvas :is([data-category-filter],[data-case-filter],[data-equipment-tab],[data-certificate-filter]){transition:background-color .28s ease,color .28s ease}
+.design-canvas :is(input,textarea,select){transition:outline-color .24s ease,background-color .24s ease}
+.design-canvas :is(input,textarea,select):focus-visible{outline:1px solid #4c4c4c;outline-offset:0}
+.header a,.header button,.footer-links a{transition:color .24s ease}
+.product-menu{display:block!important;visibility:hidden;opacity:0;translate:0 5px;pointer-events:none;transition:opacity .24s ease,translate .24s ease,visibility .24s}
+.nav-products:is(:hover,:focus-within) .product-menu{visibility:visible;opacity:1;translate:0 0;pointer-events:auto}
+.design-canvas [data-strength-column]{transition:width .44s cubic-bezier(.25,.6,.3,1)}
+.design-canvas [data-strength-choice]{transition:color .28s ease}
+.design-canvas [data-strength-choice][aria-pressed=true]{color:#1d2023!important}
+.process-description{display:grid;grid-template-rows:1fr;transition:grid-template-rows .44s cubic-bezier(.25,.6,.3,1),opacity .32s ease}
+.process-description>div{min-height:0;overflow:hidden}
+.process:has(.process-toggle[aria-expanded=false]) .process-description{grid-template-rows:0fr;opacity:0}
+@supports(interpolate-size:allow-keywords){
+ .design-canvas details[data-product-accordion]{interpolate-size:allow-keywords}
+ .design-canvas details[data-product-accordion]::details-content{block-size:0;overflow:clip;transition:block-size .44s cubic-bezier(.25,.6,.3,1),content-visibility .44s allow-discrete}
+ .design-canvas details[data-product-accordion][open]::details-content{block-size:auto}
+}
+.media-dialog[open],.navigation-search[open],#information-dialog[open]{animation:dialog-enter .28s ease-out}
+@keyframes dialog-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){
+ .product-menu,.process-description,.media-dialog,.navigation-search,#information-dialog,[data-card-feedback] *,[data-strength-column],.header a,.header button{animation:none!important;transition:none!important}
+ .product-menu{translate:none}
+ .design-canvas [data-card-feedback]:is(:hover,:focus-within) [data-action] img{translate:none}
+}
+
+[data-card-feedback-title]{transition:color .28s ease}
+[data-card-feedback]:is(:hover,:focus-within) [data-card-feedback-title]{color:var(--orange)!important}
+.solution-image img{transition:scale .44s ease}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.solution-card:hover .solution-image img{scale:1.02}}
+[data-card-feedback]:focus-within .solution-image img{scale:1.02}
+@media(prefers-reduced-motion:reduce){[data-card-feedback-title],.solution-image img{transition:none!important}.solution-image img{scale:1!important}}
+
+.design-canvas [data-inspection-disclosure]{gap:0!important}
+[data-inspection-disclosure]>[role=button]{cursor:pointer}
+.inspection-disclosure{display:grid;grid-template-rows:1fr;opacity:1;width:100%;transition:grid-template-rows .44s cubic-bezier(.25,.6,.3,1),opacity .32s ease}
+.inspection-disclosure[data-open=false]{grid-template-rows:0fr;opacity:0}
+.inspection-disclosure-clip{min-height:0;overflow:hidden}
+.inspection-disclosure-content{padding-top:calc(14 * var(--u))}
+@media(max-width:800px){.inspection-disclosure-content{padding-top:16px}}
+@media(prefers-reduced-motion:reduce){.inspection-disclosure,.design-canvas details[data-product-accordion]::details-content{transition:none!important}}
+/* Inspection dark panels represent hover, not a preselected second item. */
+.design-canvas [data-node-id="326:26"]>.dnode{background:#e8e8e8!important;border-left-width:0!important;box-shadow:none;transition:background-color .28s ease,box-shadow .28s ease}
+.design-canvas [data-node-id="326:26"]>.dnode>p{color:#1e1e1e!important;transition:color .28s ease}
+.design-canvas [data-node-id="326:26"]>.dnode:has(>[role=button]:focus-visible){background:#1e1e1e!important;box-shadow:inset calc(3 * var(--u)) 0 var(--orange)}
+.design-canvas [data-node-id="326:26"]>.dnode:has(>[role=button]:focus-visible)>p{color:#ececec!important}
+@media(hover:hover){
+ .design-canvas [data-node-id="326:26"]>.dnode:hover{background:#1e1e1e!important;box-shadow:inset calc(3 * var(--u)) 0 var(--orange)}
+ .design-canvas [data-node-id="326:26"]>.dnode:hover>p{color:#ececec!important}
+}
+.design-canvas [data-cert-card]{background:#eee!important;border-color:#d9d9d9!important}
+@media(max-width:800px){
+ .design-canvas .dnode[data-certificate-image-frame]{position:relative!important;width:100%!important;height:auto!important;aspect-ratio:296/398;overflow:hidden}
+ .design-canvas [data-certificate-image-frame] .dnode{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-height:none!important}
+ .design-canvas [data-certificate-image-frame] img[data-lightbox=certificate]{object-fit:contain!important}
+}
+
+[data-back-top]{cursor:pointer}
+[data-back-top] img{transition:translate .24s ease,filter .24s ease}
+[data-back-top]:is(:hover,:focus-visible) img{translate:0 -2px;filter:brightness(1.35)}
+@media(max-width:800px){.design-canvas .dnode[data-back-top]{width:24px!important;height:24px!important;display:grid!important;place-items:center}}
+@media(prefers-reduced-motion:reduce){[data-back-top] img{transition:none!important;translate:none!important}}

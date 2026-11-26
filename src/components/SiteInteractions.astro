@@ -1,0 +1,18 @@
+---
+import '../styles/title-reveal.css';
+import '../styles/content-reveal.css';
+import '../styles/product-center.css';
+import '../styles/catalog-hover.css';
+import '../styles/product-details.css';
+import '../styles/site-feedback.css';
+import '../styles/service-cards.css';
+import '../styles/strength-tabs.css';
+import '../styles/application-summaries.css';
+import {products} from '../data/home';
+import caseImages from '../data/case-images.json';
+import strengths from '../data/strengths.json';
+const caseSlides=caseImages.map(item=>({title:'Building & Construction Solutions',description:'Provide cable selection references for residential, commercial buildings and public facilities, meeting the power distribution and installation requirements of different building scenarios.',tags:['Residential Buildings','Public Buildings','Infrastructure Projects'],image:item.image,specs:['Building power distribution, indoor wiring, public facility power supply','Building Wires / Low Voltage Power Cables / LSZH Cables','Rated voltage, conductor material, insulating material, laying method']}));
+---
+<dialog id="media-dialog" class="media-dialog" aria-labelledby="media-dialog-title"><button class="dialog-close" type="button" aria-label="Close preview">×</button><h2 id="media-dialog-title"></h2><img id="media-dialog-image" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" hidden/><div id="media-dialog-content"></div><div class="media-actions"><button type="button" data-gallery-prev aria-label="Previous image">← Previous</button><a id="media-download" download hidden>Download image ↓</a><a href="/contact/" data-preview-inquiry>Send Inquiry →</a><button type="button" data-gallery-next aria-label="Next image">Next →</button></div></dialog>
+<script define:vars={{productData:products,caseSlides,strengths}}>window.jingyuanProducts=productData;window.jingyuanCaseSlides=caseSlides;window.jingyuanStrengths=strengths;</script>
+<script src="../scripts/site-interactions.ts"></script>

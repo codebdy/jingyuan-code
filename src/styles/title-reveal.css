@@ -1,0 +1,28 @@
+[data-title-reveal-state="pending"] {
+  opacity: 0;
+  filter: blur(6px);
+}
+
+[data-title-reveal-state="revealing"] {
+  animation:
+    title-reveal-opacity 1.2s var(--title-reveal-delay, 0ms) cubic-bezier(.75, 0, .25, 1) both,
+    title-reveal-sharp 1.2s calc(var(--title-reveal-delay, 0ms) + .2s) cubic-bezier(.75, 0, .25, 1) both;
+}
+
+@keyframes title-reveal-opacity {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes title-reveal-sharp {
+  from { filter: blur(6px); }
+  to { filter: blur(0); }
+}
+
+@media (prefers-reduced-motion: reduce), print {
+  [data-title-reveal-state] {
+    opacity: 1 !important;
+    filter: none !important;
+    animation: none !important;
+  }
+}

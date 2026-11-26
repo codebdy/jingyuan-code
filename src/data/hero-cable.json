@@ -1,0 +1,16 @@
+{
+  "source": "../output/cable-animation-pvc-smooth/frames-4k/unique_000.png \u2026 unique_099.png",
+  "fullWidth": 1080,
+  "fullHeight": 1920,
+  "crop": {
+    "left": 370,
+    "top": 180,
+    "width": 340,
+    "height": 1516
+  },
+  "frames": 199,
+  "frameDurationMs": 40,
+  "durationMs": 7960,
+  "quality": 96,
+  "alphaQuality": 100
+}

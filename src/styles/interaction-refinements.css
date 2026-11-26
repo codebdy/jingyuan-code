@@ -1,0 +1,63 @@
+/* Certificate categories keep the original panel geometry while switching. */
+/* Optical offsets use the rendered ink weight of each Inter Tight 400 digit.
+   em keeps the correction proportional to the original 16px type size. */
+.design-canvas [data-selection-number="1"]{--selection-visual-x:-.0415em;--selection-visual-y:.0455em}
+.design-canvas [data-selection-number="2"]{--selection-visual-x:-.0111em;--selection-visual-y:-.0224em}
+.design-canvas [data-selection-number="3"]{--selection-visual-x:-.0382em;--selection-visual-y:-.0121em}
+.design-canvas [data-selection-number="4"]{--selection-visual-x:-.0265em;--selection-visual-y:-.0213em}
+.design-canvas [data-selection-number="5"]{--selection-visual-x:-.0058em;--selection-visual-y:-.002em}
+.design-canvas [data-selection-number="6"]{--selection-visual-x:.0094em;--selection-visual-y:-.0098em}
+.design-canvas .dnode[data-selection-number]{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr)!important;place-items:center!important;width:calc(36 * var(--u))!important;height:calc(36 * var(--u))!important;flex:none!important}
+.design-canvas .dnode[data-selection-number]>.dnode{grid-area:1/1!important;margin:0!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important}
+.design-canvas .dnode[data-selection-number]>p{display:flex!important;align-items:center!important;justify-content:center!important;font-size:calc(16 * var(--u))!important;line-height:1!important;letter-spacing:0!important;text-align:center;color:#fff!important;z-index:1}
+/* Scale a fixed typesetting box, so fractional viewport sizes cannot move its baseline. */
+.design-canvas [data-selection-number] .selection-glyph{display:flex;align-items:center;justify-content:center;flex:none;width:36px;height:36px;font-size:16px;line-height:1;letter-spacing:0;transform:scale(calc(var(--u) / 1px)) translate(var(--selection-visual-x),var(--selection-visual-y));transform-origin:center}
+.design-canvas .dnode[data-selection-number]>div>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important}
+.design-canvas [data-certificate-tab-row]{cursor:pointer;transition:background .2s,color .2s}
+.design-canvas [data-certificate-tab-row][data-certificate-selected=true]{background:#1e1e1e!important;color:#e8e8e8!important}
+.design-canvas [data-certificate-tab-row][data-certificate-selected=false]{background:#d9d9d9!important;color:#4c4c4c!important}
+.design-canvas [data-certificate-tab-row] [data-certificate-filter]{color:inherit!important;background:transparent!important}
+.design-canvas [data-certificate-tab-row] p{color:inherit!important}
+.design-canvas [data-certificate-gallery]{position:relative}
+.design-canvas [data-certificate-visible=false]{visibility:hidden;pointer-events:none}
+.certificate-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;margin:0;color:#4c4c4c;font-size:calc(18 * var(--u));line-height:1.5;text-align:center}
+.certificate-empty[hidden]{display:none}
+/* The five process columns are hover feedback, not a persistent selection. */
+.quality-step-hit{position:absolute;top:0;width:calc(336 * var(--u));height:calc(342 * var(--u));z-index:2}
+.design-canvas [data-node-id="322:1884"]{background:#bababa!important}
+.design-canvas [data-node-id="322:1891"]> .dn-paint{transition:background .22s}
+/* Keep the FAQ icon inside the full-width question button, avoiding clipping. */
+.design-canvas [data-faq-row]> .dnode:first-child{overflow:visible;flex-wrap:nowrap!important}
+.design-canvas [data-faq-toggle]{position:relative!important;flex:1 1 auto!important;min-width:0;white-space:normal!important;width:100%!important;padding-right:calc(56 * var(--u))!important;min-height:calc(32 * var(--u));line-height:1.35!important}
+/* Both signs use the same centered 14px strokes; only the vertical stroke fades. */
+.design-canvas [data-faq-toggle] .faq-indicator{position:absolute;right:0;top:50%;transform:translateY(-50%);width:calc(32 * var(--u));height:calc(32 * var(--u));background:#e8e8e8;color:#1e2329;transition:background-color .32s ease,color .32s ease;pointer-events:none}
+.faq-indicator::before,.faq-indicator::after{content:'';position:absolute;left:50%;top:50%;width:calc(14 * var(--u));height:calc(2 * var(--u));background:currentColor;transform:translate(-50%,-50%)}
+.faq-indicator::after{transform:translate(-50%,-50%) rotate(90deg) scaleX(1);transition:transform .36s ease,opacity .3s ease}
+.design-canvas [data-faq-toggle][aria-expanded=true] .faq-indicator{background:#1e2329;color:white}
+[data-faq-toggle][aria-expanded=true] .faq-indicator::after{transform:translate(-50%,-50%) rotate(90deg) scaleX(0);opacity:0}
+.design-canvas [data-faq-toggle]:is(:hover,:focus-visible) .faq-indicator{background:var(--orange)}
+.design-canvas [data-faq-toggle]~ .dnode{display:none!important}
+.design-canvas [data-faq-animated]{gap:0!important;transition:none}
+.faq-answer-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .44s cubic-bezier(.25,.6,.3,1);width:100%}
+[data-faq-row][data-open=true]>.faq-answer-panel{grid-template-rows:1fr}
+.faq-answer-clip{min-height:0;overflow:hidden;opacity:0;transition:opacity .3s ease}
+[data-faq-row][data-open=true]>.faq-answer-panel>.faq-answer-clip{opacity:1}
+.faq-answer-content{display:flex;flex-direction:column;gap:calc(16 * var(--u));padding-top:calc(16 * var(--u))}
+.design-canvas [data-faq-row]>p,
+.design-canvas [data-faq-row] .faq-answer-content,
+.design-canvas [data-faq-row] .faq-answer-content :is(p,span){color:#585959!important}
+.faq-request{font-size:calc(16 * var(--u));line-height:1.6;margin:0}
+@media(prefers-reduced-motion:reduce){.faq-answer-panel,.faq-answer-clip,.faq-indicator,.faq-indicator::after{transition:none!important}}
+@media(max-width:800px){
+ .quality-step-hit{display:none}
+ .design-canvas [data-quality-hovered]{background:#bababa!important;padding:12px!important}
+ .design-canvas [data-quality-hovered=true]{background:#e0452d!important}
+ .design-canvas [data-certificate-gallery]{width:100%!important;min-height:230px!important}
+ .design-canvas [data-certificate-gallery][data-certificate-empty=true]> .dnode{display:none!important}
+ .certificate-empty{font-size:16px}
+ .design-canvas [data-faq-toggle]{padding-right:48px!important;min-height:32px!important}
+ .design-canvas [data-faq-toggle] .faq-indicator{width:32px;height:32px}
+ .faq-indicator::before,.faq-indicator::after{width:14px;height:2px}
+ .faq-answer-content{padding-top:16px;gap:16px}
+ .faq-request{font-size:14px}
+}

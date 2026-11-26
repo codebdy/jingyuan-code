@@ -1,0 +1,40 @@
+---
+import Asset from './Asset.astro';
+import '../styles/inquiry-dialog.css';
+---
+<dialog id="navigation-inquiry" class="inquiry-dialog" aria-labelledby="navigation-inquiry-title">
+  <button class="dialog-close" type="button" aria-label="Close inquiry">×</button>
+  <h2 id="navigation-inquiry-title">Send An Inquiry.</h2>
+  <form data-inquiry-form data-draft-key="jingyuan-navigation-inquiry" data-endpoint={import.meta.env.PUBLIC_INQUIRY_ENDPOINT}>
+    <div class="inquiry-dialog-fields">
+      <label>Full Name <span aria-hidden="true">*</span><input name="full-name" data-field="Full Name" autocomplete="name" required /></label>
+      <label>Email Address <span aria-hidden="true">*</span><input name="email-address" data-field="Email Address" type="email" autocomplete="email" required /></label>
+      <label>Company Name<input name="company-name" data-field="Company Name" autocomplete="organization" /></label>
+      <label>Product Model<input name="product-model" data-field="Product Model" placeholder="YJV, MI, KVV…" /></label>
+      <label class="inquiry-dialog-message">Message <span aria-hidden="true">*</span><textarea name="message" data-field="Message" rows="4" required></textarea></label>
+    </div>
+    <button class="inquiry-dialog-submit" type="submit"><span>Submit Inquiry</span><Asset file="6c854.svg" /></button>
+  </form>
+</dialog>
+<script>
+  const dialog=document.querySelector<HTMLDialogElement>('#navigation-inquiry')!;
+  document.querySelector<HTMLAnchorElement>('[data-nav-inquiry]')?.addEventListener('click',event=>{
+    if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||event.button!==0)return;
+    event.preventDefault();
+    document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');
+    if(!dialog.open)dialog.showModal();
+  });
+  dialog.querySelector('.dialog-close')?.addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('keydown',event=>{
+    if(event.key!=='Tab')return;
+    const controls=Array.from(dialog.querySelectorAll<HTMLElement>('button:not(:disabled),input:not(:disabled),textarea:not(:disabled),a[href]')).filter(control=>control.getClientRects().length>0);
+    const first=controls[0],last=controls.at(-1);
+    if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
+    else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
+  });
+  dialog.addEventListener('click',event=>{
+    if(event.target!==dialog)return;
+    const rect=dialog.getBoundingClientRect();
+    if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();
+  });
+</script>

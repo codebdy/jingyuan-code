@@ -1,0 +1,28 @@
+export const categories = [
+  'Low Voltage Power Cables', 'Low-Smoke Halogen-Free Cables', 'Mineral-Insulated Fire-Resistant Cables',
+  'Building Wires', 'Aluminum Alloy Cables', 'Control Cables',
+];
+export const products = [
+  { id: 'yJV', tag: 'Low Voltage Power Cables', type: 'Low Voltage Power Cable', model: 'JY-YJV-3×25', image: '6f2c7.png', node: '102:48', keywords: 'YJV low voltage power distribution copper', specs: [['Rated Voltage:', '0.6/1kV'], ['Conductor:', 'Copper'], ['Core Configuration:', '3-Core'], ['Conductor Size:', '25 mm²'], ['Insulation:', 'XLPE'], ['Outer Sheath:', 'PVC']] },
+  { id: 'mi', tag: 'Mineral-Insulated Fire-Resistant Cables', type: 'Mineral-Insulated Cable', model: 'JY-MI-3×10', image: '865b8.png', node: '107:69', keywords: 'MI mineral fire resistant protection low smoke low halogen LSZH', specs: [['Rated Voltage:', '0.6/1kV (Example)'], ['Copper', ''], ['Core Configuration:', '3-Core'], ['Conductor Size:', '10 mm²'], ['Insulation:', 'Mineral Insulation'], ['Outer Sheath:', 'Copper Sheath (Example)']] },
+  { id: 'kvv', tag: 'Low Voltage Power Cables', type: 'Control Cable', model: 'JY-KVV-10×1.5', image: '2dcd5.png', node: '107:106', keywords: 'KVV control signal connection building wiring BV', specs: [['Rated Voltage:', '450/750V'], ['Conductor:', 'Copper'], ['Core Configuration:', '10-Core'], ['Conductor Size:', '1.5 mm²'], ['Insulation:', 'PVC'], ['Outer Sheath:', 'PVC']] },
+];
+const buildingDescription = 'Provide reliable power connections for modern buildings.Offer cable products suitable for building power distribution, electrical installation and fire protection related lines in commercial buildings, residences, public facilities and infrastructure projects, meeting the power transmission and line connection requirements in different building environments.';
+export const solutions = [
+  { label: 'Building & Infrastructure', title: 'Powering Modern Buildings.', description: buildingDescription, tags: ['Commercial', 'Residential', 'Infrastructure'], offset: '-13.74%', node: '75:17' },
+  { label: 'Transportation & Mobility', title: 'Transportation And Rail Transit', description: 'For projects related to rail transit, railways, urban transportation and transportation infrastructure, we provide cable products necessary for power transmission and control connections. According to the operating environment and electrical system requirements of different transportation facilities, we pay attention to the structural design, mechanical protection and corresponding safety performance of the cables.', tags: ['Railway', 'Metro', 'Tunnel'], offset: '-121.32%', node: '82:102' },
+  { label: 'Industrial & Manufacturing', title: 'Industrial Manufacturing', description: 'Provide power and control connection solutions for industrial production lines, manufacturing plants and automation equipment. According to the operating environment, load requirements and control system requirements of different devices, reasonably configure cable specifications and structures to support stable and efficient electrical connections between industrial equipment.', tags: ['Factory', 'Automation', 'Machinery'], offset: '-229.46%', node: '82:127' },
+  { label: 'Energy & Power', title: 'Energy And Power System', description: buildingDescription, tags: ['Power Grid', 'Solar', 'Wind'], offset: '-340.86%', node: '82:154' },
+];
+export const processes = [
+  { title: 'Wire Drawing & Stranding', label: 'Conductor Processing', description: 'Copper or aluminum conductors are drawn and stranded to achieve the required diameter, structure, and electrical characteristics.', tags: '[ Conductor ] · [ Diameter ] ·[ Stranding ]', node: '115:393' },
+  { title: 'Insulation Processing', label: 'Insulation Extrusion', description: 'Insulation materials are extruded around conductors to provide electrical insulation and meet the specified dimensional requirements.', tags: '[ Insulation ] · [ Extrusio ] ·[ Protection ]', node: '115:362' },
+  { title: 'Cabling', label: 'CABLE ASSEMBLY', description: 'Insulated cores are assembled and twisted together according to the cable design to form the required multi-core structure.', tags: '[ Core Assembly ] · [ Twisting ] ·[ Structure ]', node: '115:383' },
+  { title: 'Sheathing', label: 'Sheath Extrusion', description: 'An outer sheath is applied to the cable assembly to provide protection according to the product design and application requirements.', tags: '[ Outer Sheath ] · [ Protection ] ·[ Finishing ]', node: '115:400' },
+  { title: 'Inspection & Testing', label: 'Quality Inspection', description: 'Finished cables undergo applicable inspections and tests to verify compliance with relevant product specifications and quality requirements.', tags: '[ Inspection ] · [ Testing ] ·[ Compliance]', node: '115:433' },
+];
+export const news = [
+  { title: 'Smarter Manufacturing, Better Quality', description: 'As green infrastructure development continues to advance, environmentally friendly cable products are gradually becoming an important direction for industry development.', image: '5caab.png', icon: 'c5296.svg' },
+  { title: 'Advancing Manufacturing Excellence', description: 'From raw material inspection to finished product testing, we continuously improve our quality management processes to ensure that our products meet relevant standards and requirements.', image: 'e48f5.png', icon: '5a963.svg' },
+  { title: 'Industry Trends in Focus', description: 'As green infrastructure development continues to advance, environmentally friendly cable products are gradually becoming an important direction for industry development.', image: '82fea.png', icon: 'c5296.svg' },
+];

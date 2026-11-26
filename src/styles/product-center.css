@@ -1,0 +1,20 @@
+.design-canvas[data-page="products"] [data-product-center-body],
+.design-canvas[data-page="products"] [data-product-center-paint] { background: #bababa !important; transition: background-color 260ms ease; }
+.design-canvas[data-page="products"] [data-product-center-name] { color: #1e1e1e !important; }
+.design-canvas[data-page="products"] [data-product-center-description] { color: #4c4c4c !important; }
+.design-canvas[data-page="products"] [data-card-hover] [data-button-background] { background: #000 !important; }
+.design-canvas[data-page="products"] [data-card-hover] [data-action],
+.design-canvas[data-page="products"] [data-card-hover] [data-action] p { color: #fff !important; }
+.design-canvas[data-page="products"] [data-card-hover] [data-action] img { filter: brightness(0) invert(1); }
+.design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-product-center-body],
+.design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-product-center-paint] { background: #000 !important; }
+.design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-product-center-description] { color: #fff !important; }
+.design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-product-center-name] { color: var(--orange) !important; }
+.design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-button-background] { background: var(--orange) !important; }
+.design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-action],
+.design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-action] p { color: #000 !important; }
+.design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-action] img { filter: brightness(0); }
+@media (max-width: 800px) {
+  .design-canvas[data-page="products"] [data-card-hover] [data-action] { background: #000 !important; }
+  .design-canvas[data-page="products"] [data-card-hover]:is(:hover, :focus-within) [data-action] { background: var(--orange) !important; }
+}

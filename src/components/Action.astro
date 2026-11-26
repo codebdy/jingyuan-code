@@ -1,0 +1,5 @@
+---
+import Asset from './Asset.astro';
+const { href = '/products/', label = 'Explore Our Products', variant = '', icon = '6c854.svg', class: className = '' } = Astro.props;
+---
+<a href={href} class:list={['action', variant, className]} data-footer-inquiry={label==='Discuss Your Project'?'':undefined}><span>{label}</span><span class="button-arrow" aria-hidden="true"><Asset file={icon} /></span></a>

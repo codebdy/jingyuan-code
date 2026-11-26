@@ -1,0 +1,21 @@
+.design-canvas [data-strength-row]{align-items:flex-start!important}
+.design-canvas [data-strength-column]{gap:0!important}
+.strength-rule{height:0;width:100%;border-top:1px solid #bababa}
+.design-canvas [data-strength-choice]{align-self:center;min-width:0!important;width:auto!important;color:#d9d9d9!important;cursor:pointer}
+.design-canvas [data-strength-choice][aria-expanded=true]{color:#1d2023!important}
+.design-canvas [data-strength-body]{display:flex;align-items:center;gap:calc(53 * var(--u));margin-left:calc(50.67 * var(--u));width:calc(100% - 50.67 * var(--u));overflow:hidden}
+.design-canvas [data-strength-body]>[data-node-id="356:34"]{width:calc(474 * var(--u));flex:0 0 auto}
+.design-canvas [data-strength-body]>[data-strength-choice]{width:var(--strength-number-width,auto)!important}
+/* Restore both centering axes lost in the imported icon transform. */
+.design-canvas .dnode[data-node-id="356:35"]{position:relative!important;width:calc(40 * var(--u))!important;height:calc(40 * var(--u))!important;overflow:visible!important}
+.design-canvas .dnode[data-node-id="356:36"]{position:absolute!important;left:50%!important;top:50%!important;translate:-50% -50%!important;width:calc(26.367 * var(--u))!important;height:calc(35.05 * var(--u))!important}
+.design-canvas [data-node-id="356:36"]>.dnode{position:absolute!important;inset:-2.14% -2.84%!important;width:auto!important;height:auto!important;max-width:none!important}
+.design-canvas [data-node-id="356:35"] img{position:static!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important}
+@media(max-width:800px){
+ .design-canvas .dnode[data-strength-row]{flex-direction:column!important;gap:24px!important}
+ .design-canvas .dnode[data-strength-column]{width:100%!important}
+ .design-canvas [data-strength-body]{width:100%!important;margin-left:0!important;overflow:hidden}
+ .design-canvas [data-strength-body]>[data-node-id="356:34"]{width:100%!important}
+ .design-canvas [data-strength-column]>[data-strength-choice]{align-self:flex-start}
+ .design-canvas [data-strength-body]>[data-strength-choice]{width:2ch!important}
+}

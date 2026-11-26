@@ -1,0 +1,58 @@
+<h1 id="hero-title" data-node-id="23:53" aria-label="Made For Reliability."><span class="typewriter-line">Made</span><span class="typewriter-line">For Reliability.</span></h1>
+<script is:inline>
+  (() => {
+    const title = document.getElementById('hero-title');
+    const lines = title ? Array.from(title.querySelectorAll('.typewriter-line')) : [];
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (!lines.length || motion.matches || typeof lines[0].animate !== 'function') return;
+
+    let stopped = false;
+    let fallback;
+    const animations = [];
+    const reveal = () => {
+      if (stopped) return;
+      stopped = true;
+      clearTimeout(fallback);
+      lines.forEach(line => { line.style.clipPath = ''; });
+      animations.forEach(animation => animation.cancel());
+      motion.removeEventListener('change', onMotionChange);
+    };
+    const onMotionChange = () => { if (motion.matches) reveal(); };
+
+    try {
+      // The full text keeps both lines' space reserved throughout the animation.
+      lines.forEach(line => { line.style.clipPath = 'inset(0 100% 0 0)'; });
+      motion.addEventListener('change', onMotionChange);
+      fallback = setTimeout(reveal, 4500);
+      const fontsReady = document.fonts ? document.fonts.ready : Promise.resolve();
+      fontsReady.then(() => {
+        if (stopped) return;
+        try {
+          let delay = 220;
+          for (const line of lines) {
+            const text = line.firstChild;
+            const width = line.getBoundingClientRect().width;
+            if (!text || !width) throw new Error('Title is not measurable');
+            const range = document.createRange();
+            range.setStart(text, 0);
+            const characters = Array.from(text.textContent);
+            const frames = [{ clipPath: 'inset(0 100% 0 0)', offset: 0, easing: 'step-end' }];
+            let end = 0;
+            characters.forEach((character, index) => {
+              end += character.length;
+              range.setEnd(text, end);
+              const edge = range.getBoundingClientRect().right - line.getBoundingClientRect().left;
+              const remaining = index === characters.length - 1 ? 0 : Math.max(0, 100 - edge / width * 100);
+              frames.push({ clipPath: `inset(0 ${remaining}% 0 0)`, offset: (index + 1) / characters.length, easing: 'step-end' });
+            });
+            const duration = characters.length * 85;
+            animations.push(line.animate(frames, { duration, delay, fill: 'both' }));
+            line.style.clipPath = '';
+            delay += duration + 160;
+          }
+          Promise.all(animations.map(animation => animation.finished)).then(reveal, reveal);
+        } catch { reveal(); }
+      }, reveal);
+    } catch { reveal(); }
+  })();
+</script>

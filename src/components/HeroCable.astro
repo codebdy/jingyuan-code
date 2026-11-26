@@ -1,0 +1,23 @@
+---
+import animation from '../assets/figma/hero-cable-retina.webp';
+import poster from '../assets/figma/hero-cable-retina-poster.webp';
+import metadata from '../data/hero-cable.json';
+
+const {crop,fullWidth,fullHeight}=metadata;
+const placement={
+  '--cable-left':`${crop.left/fullWidth*100}%`,
+  '--cable-top':`${crop.top/fullHeight*100}%`,
+  '--cable-width':`${crop.width/fullWidth*100}%`,
+  '--cable-height':`${crop.height/fullHeight*100}%`,
+};
+---
+<div class="hero-cable" aria-hidden="true" style={placement}>
+  <div class="hero-cable-frame">
+    <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset={poster.src}/>
+      <img src={animation.src} width={animation.width} height={animation.height} alt=""
+        loading="eager" fetchpriority="high" decoding="async" data-asset="hero-cable-retina.webp"
+        data-animated data-animated-poster={poster.src}/>
+    </picture>
+  </div>
+</div>

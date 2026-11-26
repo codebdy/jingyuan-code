@@ -1,0 +1,66 @@
+:root { --site-header-height: calc(80 * var(--u)); }
+
+.header {
+  --nav-color: #000;
+  --nav-hover: #fff;
+  position: fixed;
+  inset: 0 0 auto;
+  width: 100%;
+  height: calc(136 * var(--u));
+  padding: calc(56 * var(--u)) calc(120 * var(--u));
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: transparent;
+  color: var(--nav-color);
+  font-size: calc(18 * var(--u));
+  font-weight: 500;
+  letter-spacing: calc(-.54 * var(--u));
+  transition: background-color 220ms ease, height 220ms ease, padding 220ms ease;
+}
+.header.is-scrolled {
+  --nav-color: #fff;
+  --nav-hover: var(--orange);
+  height: var(--site-header-height);
+  padding-block: calc(28 * var(--u));
+  background: #000;
+}
+.header:not(.header--home) { --nav-color: #fff; --nav-hover: var(--orange); }
+.header--plain { background: #000; }
+.header nav { display: flex; align-items: center; gap: calc(53 * var(--u)); letter-spacing: calc(-.36 * var(--u)); line-height: normal; }
+.header nav > a, .header .nav-products > a, .header .inquiry, .header .search-shortcut, .header .menu-toggle { color: var(--nav-color); }
+.header nav > a:is(:hover, :focus-visible), .header .nav-products:is(:hover, :focus-within) > a,
+.header .inquiry:is(:hover, :focus-visible), .header .search-shortcut:is(:hover, :focus-visible),
+.header .menu-toggle:is(:hover, :focus-visible) { color: var(--nav-hover); }
+.header-tools { display: flex; gap: calc(37 * var(--u)); align-items: flex-start; }
+.search-shortcut { display: grid; place-items: center; width: calc(24 * var(--u)); height: calc(24 * var(--u)); }
+.nav-search-icon { display: block; width: 100%; height: 100%; background: currentColor; mask: url('../assets/figma/3aa88.svg') center / contain no-repeat; }
+.inquiry { display: flex; gap: calc(12 * var(--u)); align-items: flex-start; font-weight: 400; }
+.message-icon { width: calc(24 * var(--u)); height: calc(24 * var(--u)); display: grid; place-items: center; }
+.message-icon::before { content: ''; display: block; width: calc(21.9233 * var(--u)); height: calc(21.1351 * var(--u)); background: currentColor; mask: url('../assets/figma/a17a6.svg') center / contain no-repeat; }
+.menu-toggle { display: none; }
+.nav-products { position: relative; display: block; }
+.product-menu { display: none; position: absolute; top: 100%; left: 0; padding-top: 20px; min-width: 270px; z-index: 1; }
+.product-menu a { display: block; padding: 13px 16px; font-size: 15px; line-height: 1.4; white-space: normal; color: #fff; background: #000; }
+.product-menu a:is(:hover, :focus-visible) { color: var(--orange); }
+.nav-products:is(:hover, :focus-within) .product-menu { display: block; }
+main section[id] { scroll-margin-top: calc(var(--site-header-height) + 16px); }
+
+@media (max-width: 800px) {
+  :root { --site-header-height: 74px; }
+  .header, .header.is-scrolled { inset: 0 0 auto; height: var(--site-header-height); padding: 25px 24px 19px; font-size: 14px; }
+  .design-body .site { padding-top: 74px; }
+  .design-body .header:not(.is-scrolled) { background: #000; padding: 24px; }
+  .design-body .header .menu-toggle { padding-left: 24px; }
+  .menu-toggle { display: flex; align-items: center; gap: 30px; }
+  .menu-toggle span { font-size: 20px; }
+  .header-tools { gap: 22px; }
+  .header nav { display: none; position: absolute; inset: 74px 0 auto; max-height: calc(100dvh - 74px); overflow-y: auto; background: #000; color: #fff; padding: 24px; font-size: 16px; gap: 20px; }
+  .header:has(.menu-toggle[aria-expanded='true']) nav { display: flex; flex-direction: column; align-items: flex-start; }
+  .header nav > a, .header .nav-products > a { color: #fff; }
+  .header nav > a:is(:hover, :focus-visible), .header .nav-products:is(:hover, :focus-within) > a { color: var(--orange); }
+  .product-menu { position: static; padding-top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .header { transition: none; } }
+@media print { .header, .header.is-scrolled { position: absolute; background: transparent; --nav-color: #000; --nav-hover: #000; } }

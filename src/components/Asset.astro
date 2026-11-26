@@ -1,0 +1,13 @@
+---
+import type { ImageMetadata } from 'astro';
+import svgSizes from '../data/svg-sizes.json';
+interface Props { file: string; alt?: string; class?: string; style?: string; loading?: 'lazy' | 'eager'; fetchpriority?: 'high' | 'low' | 'auto'; }
+const { file, alt = '', class: className, style, loading = 'lazy', fetchpriority } = Astro.props;
+const rasters = import.meta.glob<{ default: ImageMetadata }>('../assets/figma/*.{png,gif}', { eager: true });
+const vectors = import.meta.glob<string>('../assets/figma/*.svg', { eager: true, query: '?url', import: 'default' });
+const raster = rasters[`../assets/figma/${file}`]?.default;
+const src = raster?.src ?? vectors[`../assets/figma/${file}`];
+if (!src) throw new Error(`Missing Figma asset: ${file}`);
+const dimensions = raster ?? svgSizes[file as keyof typeof svgSizes];
+---
+<img src={src} width={dimensions?.width} height={dimensions?.height} alt={alt} class={className} style={style} loading={loading} fetchpriority={fetchpriority} decoding="async" data-asset={file} />

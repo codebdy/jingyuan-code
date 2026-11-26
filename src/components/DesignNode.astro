@@ -1,0 +1,46 @@
+---
+import { cardGroupById } from '../data/card-groups';
+import { productCenterRoles } from '../data/product-center';
+import { productPath } from '../data/product-links';
+import ManufacturingVideoButton from './ManufacturingVideoButton.astro';
+interface Props { node:any; productCenter?:boolean; catalogModel?:string; applicationCard?:boolean }
+const {node,productCenter=false}=Astro.props;
+const isText=typeof node==='string';
+const isBackTop=!isText&&node.attrs?.['data-name']==='andrsrxn:key-shift';
+const Tag=isText?'span':isBackTop?'a':node.tag;
+const {class:className,...attrs}=isText?{}:node.attrs??{};
+if(isBackTop){attrs.href='#top';attrs['aria-label']='Back to top';attrs['data-back-top']='';}
+if(attrs['data-inquiry-form']!==undefined&&import.meta.env.PUBLIC_INQUIRY_ENDPOINT)attrs['data-endpoint']=import.meta.env.PUBLIC_INQUIRY_ENDPOINT;
+const classes=isText?'':['dnode',className,node.style?.position==='absolute'?'dn-absolute':'',node.style?.display==='contents'?'dn-contents':'',node.style?.maskImage?'dn-mask':'',node.tag==='div'&&node.style?.background&&!node.children?.length?'dn-paint':''];
+const children=isText?[]:node.children??[];
+const isSelectionGlyph=['280:3','280:48','280:55','280:62','280:69','280:76'].includes(attrs['data-node-id']);
+const catalogModel=attrs['data-catalog-model']??Astro.props.catalogModel;
+if(catalogModel&&children.length===1&&typeof children[0]==='string'&&children[0].trim()===catalogModel)attrs['data-catalog-model-label']='';
+const renderStyle=isText?{}:{...node.style};
+if(['280:4','280:46','280:53','280:60','280:67','280:74'].includes(attrs['data-node-id']))attrs['data-selection-number']=String(children[1]?.children?.[0]??'');
+if(['372:169','375:199','372:191','375:207'].includes(attrs['data-node-id']))attrs['data-service-card']='';
+if(['372:172','375:201','372:193','375:209'].includes(attrs['data-node-id']))attrs['data-service-paint']='';
+if(['372:112','375:204','372:196','375:212'].includes(attrs['data-node-id']))attrs['data-service-copy']='';
+if(attrs['data-node-id']==='310:1227')attrs['data-video-trigger-slot']='';
+if(attrs['data-node-id']==='310:1226')attrs['data-video-copy']='';
+if(attrs['data-catalog-card']!==undefined)attrs['data-product-href']=productPath(catalogModel);
+if(catalogModel&&['data-card-image','data-product-preview','data-action','data-catalog-model-label'].some(key=>attrs[key]!==undefined)) {
+  attrs.href=productPath(catalogModel);
+  delete attrs['data-quick-product'];
+  if(attrs['data-card-image']!==undefined){renderStyle.pointerEvents='auto';renderStyle.display??='block';}
+  if(attrs['data-card-image']!==undefined||attrs['data-product-preview']!==undefined)attrs['aria-label']=`View ${catalogModel} details`;
+}
+const productRole=productCenter && productCenterRoles[attrs['data-node-id']];
+if(productRole)attrs[`data-product-center-${productRole}`]='';
+const revealGroup=cardGroupById.get(attrs['data-node-id']);
+if(revealGroup){attrs['data-reveal-card']='';attrs['data-reveal-group']=revealGroup;}
+if(revealGroup?.endsWith('-applications')&&['category-applications','about-applications'].includes(revealGroup))attrs['data-application-card']='';
+// Preserve Figma's multi-line text blocks; small card titles stay static.
+const textOf=(value:any):string=>typeof value==='string'?value:(value.children??[]).map(textOf).join('');
+if(attrs['data-action']!==undefined&&textOf(node).trim()==='Discuss Your Project')attrs['data-footer-inquiry']='';
+const applicationCard=Astro.props.applicationCard||attrs['data-application-card']!==undefined;
+if(applicationCard&&node.tag==='p'&&Number(node.style?.['--design-font'])===14&&textOf(node).length>100)attrs['data-application-description']='';
+const isTextPart=(value:any):boolean=>typeof value==='string'||(['p','span','br'].includes(value.tag)&&(value.children??[]).every(isTextPart));
+if(!isText&&Number(node.style?.['--design-font'])>=32&&children.every(isTextPart)&&attrs['data-action']===undefined&&attrs['data-counter']===undefined&&/\p{L}/u.test(textOf(node)))attrs['data-title-reveal']='';
+---
+{isText?node:!node.omit&&<Tag {...attrs} class:list={classes} style={renderStyle}>{attrs['data-node-id']==='310:1227'?<ManufacturingVideoButton placement="inline"/>:isSelectionGlyph?<span class="selection-glyph">{children}</span>:children.map((child:any)=><Astro.self node={child} productCenter={productCenter} catalogModel={catalogModel} applicationCard={applicationCard}/>)}{attrs['data-faq-toggle']!==undefined&&<span class="faq-indicator" aria-hidden="true"/>}{attrs['data-node-id']==='305:769'&&<ManufacturingVideoButton/>}</Tag>}

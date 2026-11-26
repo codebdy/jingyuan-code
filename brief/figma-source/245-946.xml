@@ -1,0 +1,824 @@
+<frame id="245:946" name="11-案例详情" x="6320" y="2" width="1920" height="9786">
+  <frame id="245:979" name="Group 21" x="0" y="0" width="1920" height="960">
+    <rounded-rectangle id="245:981" name="coil-cable-cable-drum-industrial-hose-reel-copper-electric-wire-3d-illustration 1" x="0" y="0" width="1920" height="663" />
+    <rounded-rectangle id="249:34" name="Rectangle 61" x="0" y="0" width="1920" height="960" />
+    <rounded-rectangle id="245:982" name="coil-cable-cable-drum-industrial-hose-reel-copper-electric-wire-3d-illustration 2" x="0" y="900" width="1920" height="60" />
+    <frame id="245:983" name="Frame 40238" x="1354" y="921" width="444" height="17">
+      <frame id="245:984" name="Frame" x="0" y="1.5" width="14" height="14" />
+      <text id="245:986" name="Current Location: Home &gt; CASE STUDIES &gt; Industrial &amp; Manufacturing" x="44" y="0" width="400" height="17" />
+    </frame>
+    <frame id="249:53" name="Frame 1171275139" x="120" y="613" width="625" height="172">
+      <frame id="249:52" name="Frame 1171275138" x="0" y="0" width="625" height="87">
+        <frame id="249:39" name="Frame 46" x="0" y="0" width="422" height="29">
+          <frame id="249:40" name="Frame 39" x="0" y="0" width="143" height="29">
+            <text id="249:41" name="Residential buildings" x="10" y="6" width="123" height="17" />
+          </frame>
+          <frame id="249:42" name="Frame 40" x="127" y="0" width="138" height="21" hidden="true">
+            <text id="249:43" name="commercial complexes" x="8" y="3" width="122" height="15" />
+          </frame>
+          <frame id="249:44" name="Frame 41" x="149" y="0" width="114" height="29">
+            <text id="249:45" name="public buildings" x="10" y="6" width="94" height="17" />
+          </frame>
+          <frame id="249:46" name="Frame 42" x="269" y="0" width="153" height="29">
+            <text id="249:47" name="infrastructure projects" x="10" y="6" width="133" height="17" />
+          </frame>
+        </frame>
+        <text id="249:48" name="Powering Modern Infrastructure." x="0" y="43" width="625" height="44" />
+      </frame>
+      <text id="249:49" name="Provide cable selection references for residential, commercial buildings and public facilities, meeting the power distribution and installation requirements of different building scenarios." x="0" y="107" width="625" height="65" />
+    </frame>
+  </frame>
+  <frame id="251:95" name="Group 244" x="120" y="1013" width="540" height="240">
+    <rounded-rectangle id="251:61" name="Rectangle 46" x="120" y="1013" width="540" height="240" />
+    <frame id="251:62" name="Frame 62" x="140" y="1048" width="499" height="172">
+      <frame id="251:63" name="Frame 61" x="0" y="0" width="293" height="36">
+        <text id="251:65" name="PROJECT CASE STUDY" x="0" y="0" width="293" height="36" />
+      </frame>
+      <frame id="251:66" name="Frame 56" x="0" y="56" width="499" height="116">
+        <frame id="251:67" name="Frame 55" x="0" y="0" width="499" height="15">
+          <text id="251:68" name="Project Name:" x="0" y="0" width="73" height="15" />
+          <text id="251:69" name="Industrial Infrastructure Project" x="338" y="0" width="161" height="15" />
+        </frame>
+        <line id="251:70" name="Line 3" x="0" y="23" width="499" height="0" />
+        <frame id="251:71" name="Frame 56" x="0" y="31" width="499" height="15">
+          <text id="251:72" name="Industry:" x="0" y="0" width="45" height="15" />
+          <text id="252:96" name="Industrial &amp; Manufacturing" x="365" y="0" width="134" height="15" />
+        </frame>
+        <line id="251:73" name="Line 4" x="0" y="54" width="499" height="0" />
+        <frame id="251:74" name="Frame 57" x="0" y="62" width="499" height="15">
+          <text id="251:75" name="Location:" x="0" y="0" width="48" height="15" />
+          <text id="251:76" name="Project Location" x="415" y="0" width="84" height="15" />
+        </frame>
+        <line id="251:77" name="Line 5" x="0" y="85" width="499" height="0" />
+        <frame id="251:78" name="Frame 58" x="0" y="93" width="499" height="15">
+          <text id="251:79" name="Products:" x="0" y="0" width="49" height="15" />
+          <text id="251:80" name="Power Cables / Control Cables" x="342" y="0" width="157" height="15" />
+        </frame>
+        <line id="251:81" name="Line 6" x="0" y="116" width="499" height="0" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="269:597" name="Group 245" x="120" y="1013" width="540" height="240">
+    <rounded-rectangle id="269:598" name="Rectangle 46" x="120" y="1013" width="540" height="240" />
+    <frame id="269:599" name="Frame 62" x="140" y="1048" width="499" height="172">
+      <frame id="269:600" name="Frame 61" x="0" y="0" width="293" height="36">
+        <text id="269:601" name="PROJECT CASE STUDY" x="0" y="0" width="293" height="36" />
+      </frame>
+      <frame id="269:602" name="Frame 56" x="0" y="56" width="499" height="116">
+        <frame id="269:603" name="Frame 55" x="0" y="0" width="499" height="15">
+          <text id="269:604" name="Project Name:" x="0" y="0" width="73" height="15" />
+          <text id="269:605" name="Industrial Infrastructure Project" x="338" y="0" width="161" height="15" />
+        </frame>
+        <line id="269:606" name="Line 3" x="0" y="23" width="499" height="0" />
+        <frame id="269:607" name="Frame 56" x="0" y="31" width="499" height="15">
+          <text id="269:608" name="Industry:" x="0" y="0" width="45" height="15" />
+          <text id="269:609" name="Industrial &amp; Manufacturing" x="365" y="0" width="134" height="15" />
+        </frame>
+        <line id="269:610" name="Line 4" x="0" y="54" width="499" height="0" />
+        <frame id="269:611" name="Frame 57" x="0" y="62" width="499" height="15">
+          <text id="269:612" name="Location:" x="0" y="0" width="48" height="15" />
+          <text id="269:613" name="Project Location" x="415" y="0" width="84" height="15" />
+        </frame>
+        <line id="269:614" name="Line 5" x="0" y="85" width="499" height="0" />
+        <frame id="269:615" name="Frame 58" x="0" y="93" width="499" height="15">
+          <text id="269:616" name="Products:" x="0" y="0" width="49" height="15" />
+          <text id="269:617" name="Power Cables / Control Cables" x="342" y="0" width="157" height="15" />
+        </frame>
+        <line id="269:618" name="Line 6" x="0" y="116" width="499" height="0" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="245:987" name="Group 19" x="120" y="56" width="1680" height="24">
+    <frame id="245:988" name="Frame 9" x="120" y="56" width="1152" height="22">
+      <text id="245:989" name="Applications and Case Studies" x="0" y="0" width="232" height="22" />
+      <text id="245:990" name="products +" x="285" y="0" width="84" height="22" />
+      <text id="245:991" name="Quality Manufacturing" x="422" y="0" width="168" height="22" />
+      <text id="245:992" name="About Jingyuan" x="643" y="0" width="120" height="22" />
+      <text id="245:993" name="news" x="816" y="0" width="45" height="22" />
+      <text id="245:994" name="service support" x="914" y="0" width="123" height="22" />
+      <text id="245:995" name="contact" x="1090" y="0" width="62" height="22" />
+    </frame>
+    <frame id="245:996" name="Frame 10" x="1653" y="56" width="147" height="24">
+      <frame id="245:997" name="iconoir:search" x="0" y="0" width="24" height="24" />
+      <frame id="245:999" name="Group 4" x="61" y="0" width="42" height="42" hidden="true">
+        <frame id="245:1000" name="Group 3" x="61" y="0" width="42" height="42" />
+        <text id="245:1003" name="es" x="73" y="9" width="19" height="22" />
+      </frame>
+      <frame id="245:1004" name="Group 5" x="61" y="0" width="86" height="24">
+        <text id="245:1005" name="inquiry" x="61" y="0" width="50" height="22" />
+        <frame id="245:1006" name="andrsrxn:message-sound-wave" x="123" y="0" width="24" height="24" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="252:121" name="Frame 1171275144" x="776" y="1013" width="995" height="602">
+    <frame id="252:120" name="Frame 1171275143" x="0" y="0" width="995" height="358">
+      <frame id="252:119" name="Frame 1171275142" x="0" y="0" width="853" height="136">
+        <text id="252:99" name="Project Overview" x="0" y="0" width="853" height="44" />
+        <text id="252:100" name="Headline: A Project Built on Reliability. Description: Every project comes with unique requirements. Jingyuan Cable provides dependable cable products designed to support diverse electrical applications and infrastructure needs." x="0" y="64" width="853" height="72" />
+      </frame>
+      <line id="252:104" name="Line 24" x="0" y="160" width="995" height="0" />
+      <frame id="252:103" name="Frame 1171275140" x="0" y="184" width="264" height="174">
+        <text id="252:101" name="Project Information:" x="0" y="0" width="264" height="22" />
+        <text id="252:102" name="Project Type: Industrial Infrastructure Application: Power Distribution Industry: Industrial &amp; Manufacturing Product Category: Power Cables Project Scope: Cable Supply Project Location: [Location]" x="0" y="30" width="264" height="144" />
+      </frame>
+    </frame>
+    <frame id="252:108" name="Frame 1171275141" x="0" y="382" width="995" height="220">
+      <rounded-rectangle id="252:105" name="Rectangle 9977" x="0" y="0" width="314" height="220" />
+      <rounded-rectangle id="252:106" name="Rectangle 9978" x="340" y="0" width="314" height="220" />
+      <rounded-rectangle id="252:107" name="Rectangle 9979" x="680" y="0" width="314" height="220" />
+    </frame>
+  </frame>
+  <frame id="252:135" name="Frame 1171275145" x="776" y="1735" width="995" height="1006">
+    <frame id="252:137" name="Frame 1171275142" x="0" y="0" width="853" height="160">
+      <text id="252:138" name="Project Background" x="0" y="0" width="853" height="44" />
+      <text id="252:139" name="Section Label: PROJECT BACKGROUND Headline: Understanding the Project. Description: The project required dependable cable products to support its electrical infrastructure. With demanding application conditions and specific technical requirements, selecting the right cable solutions was essential to ensuring reliable operation." x="0" y="64" width="853" height="96" />
+    </frame>
+    <line id="252:140" name="Line 24" x="0" y="184" width="995" height="0" />
+    <frame id="252:141" name="Frame 1171275140" x="0" y="208" width="264" height="174">
+      <text id="252:142" name="Project Information:" x="0" y="0" width="264" height="22" />
+      <text id="252:143" name="Project Type: Industrial Infrastructure Application: Power Distribution Industry: Industrial &amp; Manufacturing Product Category: Power Cables Project Scope: Cable Supply Project Location: [Location]" x="0" y="30" width="264" height="144" />
+    </frame>
+    <frame id="252:144" name="Frame 1171275141" x="0" y="406" width="995" height="600">
+      <rounded-rectangle id="252:145" name="Rectangle 9977" x="0" y="0" width="995" height="600" />
+    </frame>
+  </frame>
+  <frame id="265:213" name="Frame 1171275150" x="776" y="2861" width="995" height="554">
+    <frame id="252:149" name="Frame 1171275142" x="0" y="0" width="853" height="136">
+      <text id="252:150" name="Requirements &amp; Challenges" x="0" y="0" width="853" height="44" />
+      <text id="252:151" name="Section Label: PROJECT CHALLENGES Headline: Meeting Demanding Project Requirements. Description: Understanding the project&#39;s electrical, environmental, and installation requirements was essential to identifying suitable cable products." x="0" y="64" width="853" height="72" />
+    </frame>
+    <frame id="265:212" name="Group 245" x="0" y="166" width="995" height="388">
+      <line id="252:152" name="Line 24" x="0" y="166" width="995" height="0" />
+      <line id="265:178" name="Line 27" x="0" y="554" width="995" height="0" />
+      <line id="265:176" name="Line 26" x="498" y="554" width="0.0000169600189110497" height="388" />
+      <line id="265:179" name="Line 28" x="1" y="554" width="0.0000169600189110497" height="388" />
+      <line id="265:180" name="Line 29" x="995" y="554" width="0.0000169600189110497" height="388" />
+      <line id="265:175" name="Line 25" x="0" y="360" width="995" height="0" />
+      <frame id="265:161" name="Frame 1171275146" x="32" y="199" width="355" height="128">
+        <frame id="265:162" name="andrsrxn:battery-charging" x="0" y="0" width="40" height="40" />
+        <text id="265:158" name="Electrical Performance" x="0" y="54" width="355" height="24" />
+        <text id="265:159" name="Selecting cable products according to project voltage and current requirements." x="0" y="92" width="355" height="36" />
+      </frame>
+      <frame id="265:181" name="Frame 1171275148" x="32" y="393" width="355" height="128">
+        <frame id="265:197" name="andrsrxn:factory" x="0" y="0" width="40" height="40" />
+        <text id="265:187" name="Electrical Performance" x="0" y="54" width="355" height="24" />
+        <text id="265:188" name="Selecting cable products according to project voltage and current requirements." x="0" y="92" width="355" height="36" />
+      </frame>
+      <frame id="265:167" name="Frame 1171275147" x="536" y="199" width="355" height="128">
+        <frame id="265:201" name="andrsrxn:shield-lock" x="0" y="0" width="40" height="40" />
+        <text id="265:173" name="Application Conditions" x="0" y="54" width="355" height="24" />
+        <text id="265:174" name="Considering installation environments and operational conditions." x="0" y="92" width="355" height="36" />
+      </frame>
+      <frame id="265:189" name="Frame 1171275149" x="536" y="393" width="355" height="128">
+        <frame id="265:207" name="andrsrxn:check-badge" x="0" y="0" width="40" height="40" />
+        <text id="265:195" name="Electrical Performance" x="0" y="54" width="355" height="24" />
+        <text id="265:196" name="Selecting cable products according to project voltage and current requirements." x="0" y="92" width="355" height="36" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="265:263" name="Frame 1171275155" x="775" y="3535" width="1180" height="368">
+    <frame id="265:215" name="Frame 1171275142" x="0" y="0" width="853" height="136">
+      <text id="265:216" name="Our Solution" x="0" y="0" width="853" height="44" />
+      <text id="265:217" name="Headline: The Right Solution for the Right Application. Description:Based on the project&#39;s requirements, Jingyuan Cable provided suitable cable products and product specifications to support the electrical infrastructure and installation needs." x="0" y="64" width="853" height="72" />
+    </frame>
+    <line id="265:218" name="Line 24" x="0" y="156" width="1025" height="0" />
+    <frame id="265:262" name="Frame 1171275154" x="0" y="176" width="1180" height="192">
+      <text id="265:220" name="Solution Highlights:" x="0" y="0" width="1180" height="22" />
+      <frame id="265:260" name="Frame 1171275153" x="0" y="42" width="1180" height="150">
+        <frame id="265:238" name="Group 246" x="0" y="0" width="280" height="150">
+          <rounded-rectangle id="265:229" name="Rectangle 9980" x="0" y="0" width="280" height="150" />
+          <frame id="265:237" name="Frame 1171275152" x="28" y="25" width="210" height="100">
+            <text id="265:233" name="01." x="0" y="0" width="210" height="18" />
+            <frame id="265:230" name="Frame 1171275151" x="0" y="44" width="210" height="56">
+              <text id="265:225" name="Product Selection" x="0" y="0" width="210" height="24" />
+              <text id="265:226" name="Application-Based Product Selection" x="0" y="34" width="210" height="18" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="265:239" name="Group 247" x="300" y="0" width="280" height="150">
+          <rounded-rectangle id="265:240" name="Rectangle 9980" x="300" y="0" width="280" height="150" />
+          <frame id="265:241" name="Frame 1171275152" x="328" y="25" width="210" height="100">
+            <text id="265:242" name="02." x="0" y="0" width="210" height="18" />
+            <frame id="265:243" name="Frame 1171275151" x="0" y="44" width="210" height="56">
+              <text id="265:244" name="Specification Matching" x="0" y="0" width="193" height="24" />
+              <text id="265:245" name="Application-Based Product Selection" x="0" y="34" width="210" height="18" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="265:246" name="Group 248" x="600" y="0" width="280" height="150">
+          <rounded-rectangle id="265:247" name="Rectangle 9980" x="600" y="0" width="280" height="150" />
+          <frame id="265:248" name="Frame 1171275152" x="628" y="25" width="210" height="100">
+            <text id="265:249" name="03" x="0" y="0" width="210" height="18" />
+            <frame id="265:250" name="Frame 1171275151" x="0" y="44" width="210" height="56">
+              <text id="265:251" name="Product Selection" x="0" y="0" width="210" height="24" />
+              <text id="265:252" name="Application-Based Product Selection" x="0" y="34" width="210" height="18" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="265:253" name="Group 249" x="900" y="0" width="280" height="150">
+          <rounded-rectangle id="265:254" name="Rectangle 9980" x="900" y="0" width="280" height="150" />
+          <frame id="265:255" name="Frame 1171275152" x="928" y="25" width="210" height="100">
+            <text id="265:256" name="04." x="0" y="0" width="210" height="18" />
+            <frame id="265:257" name="Frame 1171275151" x="0" y="44" width="210" height="56">
+              <text id="265:258" name="Product Selection" x="0" y="0" width="210" height="24" />
+              <text id="265:259" name="Application-Based Product Selection" x="0" y="34" width="210" height="18" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="269:538" name="Frame 1171275160" x="775" y="4804.2138671875" width="1180" height="471">
+    <frame id="269:431" name="Frame 1171275142" x="0" y="0" width="853" height="136">
+      <text id="269:432" name="Project Execution" x="0" y="0" width="853" height="44" />
+      <text id="269:433" name="Headline: From Manufacturing to Quality Inspection. Description:Every stage of production is managed with attention to process requirements and product quality, supporting dependable cable solutions for project applications." x="0" y="64" width="853" height="72" />
+    </frame>
+    <line id="269:434" name="Line 24" x="0" y="156" width="1024" height="0" />
+    <frame id="269:537" name="Frame 1171275159" x="0" y="176" width="1180" height="295">
+      <text id="269:436" name="Solution Highlights:" x="0" y="0" width="1180" height="22" />
+      <frame id="269:536" name="Frame 1171275158" x="0" y="42" width="1180" height="253">
+        <frame id="269:438" name="Group 246" x="0" y="0" width="280" height="253">
+          <rounded-rectangle id="269:439" name="Rectangle 9980" x="0" y="0" width="280" height="253" />
+          <rounded-rectangle id="269:510" name="Rectangle 9981" x="0" y="103" width="280" height="150" />
+          <frame id="269:440" name="Frame 1171275152" x="28" y="26" width="210" height="56">
+            <frame id="269:442" name="Frame 1171275151" x="0" y="0" width="210" height="56">
+              <frame id="271:2" name="Frame 1171275167" x="0" y="0" width="216" height="24">
+                <text id="269:443" name="Wire Drawing &amp; Stranding" x="0" y="0" width="216" height="24" />
+              </frame>
+              <text id="269:444" name="Application-Based Product Selection" x="0" y="34" width="210" height="18" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="269:512" name="Group 247" x="300" y="0" width="280" height="253">
+          <rounded-rectangle id="269:513" name="Rectangle 9980" x="300" y="0" width="280" height="253" />
+          <rounded-rectangle id="269:514" name="Rectangle 9981" x="300" y="103" width="280" height="150" />
+          <frame id="269:515" name="Frame 1171275152" x="328" y="26" width="210" height="56">
+            <frame id="269:517" name="Frame 1171275151" x="0" y="0" width="210" height="56">
+              <text id="269:518" name="Insulation Processing" x="0" y="0" width="210" height="24" />
+              <text id="269:519" name="Application-Based Product Selection" x="0" y="34" width="210" height="18" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="269:520" name="Group 248" x="600" y="0" width="280" height="253">
+          <rounded-rectangle id="269:521" name="Rectangle 9980" x="600" y="0" width="280" height="253" />
+          <rounded-rectangle id="269:522" name="Rectangle 9981" x="600" y="102.7861328125" width="280" height="150" />
+          <frame id="269:523" name="Frame 1171275152" x="628" y="26" width="210" height="56">
+            <frame id="269:525" name="Frame 1171275151" x="0" y="0" width="210" height="56">
+              <text id="269:526" name="Cabling" x="0" y="0" width="210" height="24" />
+              <text id="269:527" name="Application-Based Product Selection" x="0" y="34" width="210" height="18" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="269:528" name="Group 249" x="900" y="0" width="280" height="253">
+          <rounded-rectangle id="269:529" name="Rectangle 9980" x="900" y="0" width="280" height="253" />
+          <rounded-rectangle id="269:530" name="Rectangle 9981" x="900" y="103" width="280" height="150" />
+          <frame id="269:531" name="Frame 1171275152" x="928" y="26" width="210" height="56">
+            <frame id="269:533" name="Frame 1171275151" x="0" y="0" width="210" height="56">
+              <text id="269:534" name="Sheathing" x="0" y="0" width="210" height="24" />
+              <text id="269:535" name="Application-Based Product Selection" x="0" y="34" width="210" height="18" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <line id="265:268" name="Line 24" x="775" y="4019" width="1025" height="0" />
+  <frame id="269:769" name="Group 253" x="775" y="4023" width="1580" height="661.2138671875">
+    <frame id="265:265" name="Frame 1171275142" x="775" y="4023" width="853" height="112">
+      <text id="265:266" name="Products Applied" x="0" y="0" width="853" height="44" />
+      <text id="265:267" name="Headline: Cable Products for Project Applications. Description:Explore the cable products associated with this project and learn more about their specifications and application characteristics." x="0" y="64" width="853" height="48" />
+    </frame>
+    <frame id="269:509" name="Frame 1171275157" x="775" y="4175" width="1580" height="509.2138671875">
+      <frame id="269:466" name="Group 245" x="0" y="0" width="372" height="509.2138671875">
+        <rounded-rectangle id="269:467" name="Rectangle 45" x="0" y="0" width="372" height="179" />
+        <rounded-rectangle id="269:468" name="Rectangle 47" x="65.66085052490234" y="17.232177734375" width="217.8142852783203" height="236.4250030517578" />
+        <rounded-rectangle id="269:469" name="Rectangle 46" x="0.000213623046875" y="179.214111328125" width="372" height="330" />
+        <frame id="269:470" name="Frame 39" x="13.964425086975098" y="13.785749435424805" width="154" height="21">
+          <text id="269:471" name="Low Voltage Power Cables" x="8" y="3" width="138" height="15" />
+        </frame>
+        <frame id="269:472" name="Frame 62" x="13.964425086975098" y="196.4464569091797" width="343.9535827636719" height="297.7989807128906">
+          <frame id="269:473" name="Frame 61" x="0" y="0" width="180" height="60">
+            <text id="269:474" name="Low Voltage Power Cable" x="0" y="0" width="180" height="17" />
+            <text id="269:475" name="JY-YJV-3×25" x="0" y="31" width="180" height="29" />
+          </frame>
+          <frame id="269:476" name="Frame 56" x="0" y="80" width="343.9535827636719" height="178">
+            <frame id="269:477" name="Frame 55" x="0" y="0" width="343.9535827636719" height="15">
+              <text id="269:478" name="Rated Voltage:" x="0" y="0" width="75" height="15" />
+              <text id="269:479" name="0.6/1kV" x="305.9535827636719" y="0" width="38" height="15" />
+            </frame>
+            <line id="269:480" name="Line 3" x="0" y="23" width="343.9535827636719" height="0" />
+            <frame id="269:481" name="Frame 56" x="0" y="31" width="343.9535827636719" height="15">
+              <text id="269:482" name="Conductor:" x="0" y="0" width="58" height="15" />
+              <text id="269:483" name="Copper" x="304.9535827636719" y="0" width="39" height="15" />
+            </frame>
+            <line id="269:484" name="Line 4" x="0" y="54" width="343.9535827636719" height="0" />
+            <frame id="269:485" name="Frame 57" x="0" y="62" width="343.9535827636719" height="15">
+              <text id="269:486" name="Core Configuration:" x="0" y="0" width="101" height="15" />
+              <text id="269:487" name="3-Core" x="306.9535827636719" y="0" width="37" height="15" />
+            </frame>
+            <line id="269:488" name="Line 5" x="0" y="85" width="343.9535827636719" height="0" />
+            <frame id="269:489" name="Frame 58" x="0" y="93" width="343.9535827636719" height="15">
+              <text id="269:490" name="Conductor Size:" x="0" y="0" width="82" height="15" />
+              <text id="269:491" name="25 mm²" x="302.9535827636719" y="0" width="41" height="15" />
+            </frame>
+            <line id="269:492" name="Line 6" x="0" y="116" width="343.9535827636719" height="0" />
+            <frame id="269:493" name="Frame 59" x="0" y="124" width="343.9535827636719" height="15">
+              <text id="269:494" name="Insulation:" x="0" y="0" width="52" height="15" />
+              <text id="269:495" name="XLPE" x="316.9535827636719" y="0" width="27" height="15" />
+            </frame>
+            <line id="269:496" name="Line 7" x="0" y="147" width="343.9535827636719" height="0" />
+            <frame id="269:497" name="Frame 60" x="0" y="155" width="343.9535827636719" height="15">
+              <text id="269:498" name="Outer Sheath:" x="0" y="0" width="72" height="15" />
+              <text id="269:499" name="PVC" x="320.9535827636719" y="0" width="23" height="15" />
+            </frame>
+            <line id="269:500" name="Line 8" x="0" y="178" width="343.9535827636719" height="0" />
+          </frame>
+          <frame id="269:501" name="Frame 48" x="0" y="278" width="88.79898834228516" height="19.79899024963379">
+            <text id="269:502" name="read more" x="0" y="1.3994947671890259" width="63" height="17" />
+            <frame id="269:503" name="iconoir:arrow-right" x="69" y="9.899495124816895" width="19.79898953437805" height="19.79898953437805" />
+          </frame>
+        </frame>
+        <frame id="269:505" name="Group 32" x="335.17889404296875" y="142.00021362304688" width="24" height="24">
+          <rounded-rectangle id="269:506" name="Rectangle 48" x="335.17911725724116" y="142.00036708265543" width="24" height="24" />
+          <text id="269:507" name="+" x="342.17889404296875" y="144.00021362304688" width="6.892857074737549" height="12.407142639160156" />
+        </frame>
+      </frame>
+      <frame id="265:301" name="Group 28" x="402" y="0" width="372" height="509.2138671875">
+        <rounded-rectangle id="265:302" name="Rectangle 45" x="402" y="0" width="372" height="179" />
+        <rounded-rectangle id="265:303" name="Rectangle 47" x="467.66085052490234" y="17.232177734375" width="217.8142852783203" height="236.4250030517578" />
+        <rounded-rectangle id="265:304" name="Rectangle 46" x="402.0002136230469" y="179.214111328125" width="372" height="330" />
+        <frame id="265:305" name="Frame 39" x="415.9644250869751" y="13.785749435424805" width="154" height="21">
+          <text id="265:306" name="Low Voltage Power Cables" x="8" y="3" width="138" height="15" />
+        </frame>
+        <frame id="265:307" name="Frame 62" x="415.9644250869751" y="196.4464569091797" width="343.9535827636719" height="297.7989807128906">
+          <frame id="265:308" name="Frame 61" x="0" y="0" width="180" height="60">
+            <text id="265:309" name="Low Voltage Power Cable" x="0" y="0" width="180" height="17" />
+            <text id="265:310" name="JY-YJV-3×25" x="0" y="31" width="180" height="29" />
+          </frame>
+          <frame id="265:311" name="Frame 56" x="0" y="80" width="343.9535827636719" height="178">
+            <frame id="265:312" name="Frame 55" x="0" y="0" width="343.9535827636719" height="15">
+              <text id="265:313" name="Rated Voltage:" x="0" y="0" width="75" height="15" />
+              <text id="265:314" name="0.6/1kV" x="305.9535827636719" y="0" width="38" height="15" />
+            </frame>
+            <line id="265:315" name="Line 3" x="0" y="23" width="343.9535827636719" height="0" />
+            <frame id="265:316" name="Frame 56" x="0" y="31" width="343.9535827636719" height="15">
+              <text id="265:317" name="Conductor:" x="0" y="0" width="58" height="15" />
+              <text id="265:318" name="Copper" x="304.9535827636719" y="0" width="39" height="15" />
+            </frame>
+            <line id="265:319" name="Line 4" x="0" y="54" width="343.9535827636719" height="0" />
+            <frame id="265:320" name="Frame 57" x="0" y="62" width="343.9535827636719" height="15">
+              <text id="265:321" name="Core Configuration:" x="0" y="0" width="101" height="15" />
+              <text id="265:322" name="3-Core" x="306.9535827636719" y="0" width="37" height="15" />
+            </frame>
+            <line id="265:323" name="Line 5" x="0" y="85" width="343.9535827636719" height="0" />
+            <frame id="265:324" name="Frame 58" x="0" y="93" width="343.9535827636719" height="15">
+              <text id="265:325" name="Conductor Size:" x="0" y="0" width="82" height="15" />
+              <text id="265:326" name="25 mm²" x="302.9535827636719" y="0" width="41" height="15" />
+            </frame>
+            <line id="265:327" name="Line 6" x="0" y="116" width="343.9535827636719" height="0" />
+            <frame id="265:328" name="Frame 59" x="0" y="124" width="343.9535827636719" height="15">
+              <text id="265:329" name="Insulation:" x="0" y="0" width="52" height="15" />
+              <text id="265:330" name="XLPE" x="316.9535827636719" y="0" width="27" height="15" />
+            </frame>
+            <line id="265:331" name="Line 7" x="0" y="147" width="343.9535827636719" height="0" />
+            <frame id="265:332" name="Frame 60" x="0" y="155" width="343.9535827636719" height="15">
+              <text id="265:333" name="Outer Sheath:" x="0" y="0" width="72" height="15" />
+              <text id="265:334" name="PVC" x="320.9535827636719" y="0" width="23" height="15" />
+            </frame>
+            <line id="265:335" name="Line 8" x="0" y="178" width="343.9535827636719" height="0" />
+          </frame>
+          <frame id="265:336" name="Frame 48" x="0" y="278" width="88.79898834228516" height="19.79899024963379">
+            <text id="265:337" name="read more" x="0" y="1.3994947671890259" width="63" height="17" />
+            <frame id="265:338" name="iconoir:arrow-right" x="69" y="9.899495124816895" width="19.79898953437805" height="19.79898953437805" />
+          </frame>
+        </frame>
+        <frame id="265:340" name="Group 32" x="737.1788940429688" y="142.00021362304688" width="24" height="24">
+          <rounded-rectangle id="265:341" name="Rectangle 48" x="737.1791172572412" y="142.00036708265543" width="24" height="24" />
+          <text id="265:342" name="+" x="744.1788940429688" y="144.00021362304688" width="6.892857074737549" height="12.407142639160156" />
+        </frame>
+      </frame>
+      <frame id="265:343" name="Group 29" x="804" y="0" width="373" height="509.2138671875">
+        <rounded-rectangle id="265:344" name="Rectangle 45" x="804" y="0" width="373" height="179" />
+        <frame id="265:345" name="Group 32" x="1139.1786804199219" y="142.00021362304688" width="24" height="24">
+          <rounded-rectangle id="265:346" name="Rectangle 48" x="1139.1786804199219" y="142.00021362304688" width="24" height="24" />
+          <text id="265:347" name="+" x="1146.3461608886719" y="144.81808471679688" width="6.892857074737549" height="12.407142639160156" />
+        </frame>
+        <rounded-rectangle id="265:348" name="Rectangle 47" x="869.875" y="17.232177734375" width="217.8142852783203" height="236.4250030517578" />
+        <rounded-rectangle id="265:349" name="Rectangle 46" x="804.0002136230469" y="179.214111328125" width="372" height="330" />
+        <frame id="265:350" name="Frame 39" x="818.1785717010498" y="13.785749435424805" width="218" height="21">
+          <text id="265:351" name="Mineral-Insulated Fire-Resistant Cables" x="8" y="3" width="202" height="15" />
+        </frame>
+        <frame id="265:352" name="Frame 62" x="818.1785717010498" y="196.4464569091797" width="343.9535827636719" height="297.7989807128906">
+          <frame id="265:353" name="Frame 61" x="0" y="0" width="180" height="60">
+            <text id="265:354" name="Mineral-Insulated Cable" x="0" y="0" width="180" height="17" />
+            <text id="265:355" name="JY-MI-3×10" x="0" y="31" width="180" height="29" />
+          </frame>
+          <frame id="265:356" name="Frame 56" x="0" y="80" width="343.9535827636719" height="178">
+            <frame id="265:357" name="Frame 55" x="0" y="0" width="343.9535827636719" height="15">
+              <text id="265:358" name="Rated Voltage:" x="0" y="0" width="75" height="15" />
+              <text id="265:359" name="0.6/1kV (Example)" x="251.95358276367188" y="0" width="92" height="15" />
+            </frame>
+            <line id="265:360" name="Line 3" x="0" y="23" width="343.9535827636719" height="0" />
+            <frame id="265:361" name="Frame 56" x="0" y="31" width="343.9535827636719" height="15">
+              <text id="265:362" name="Copper" x="0" y="0" width="39" height="15" />
+            </frame>
+            <line id="265:363" name="Line 4" x="0" y="54" width="343.9535827636719" height="0" />
+            <frame id="265:364" name="Frame 57" x="0" y="62" width="343.9535827636719" height="15">
+              <text id="265:365" name="Core Configuration:" x="0" y="0" width="101" height="15" />
+              <text id="265:366" name="3-Core" x="306.9535827636719" y="0" width="37" height="15" />
+            </frame>
+            <line id="265:367" name="Line 5" x="0" y="85" width="343.9535827636719" height="0" />
+            <frame id="265:368" name="Frame 58" x="0" y="93" width="343.9535827636719" height="15">
+              <text id="265:369" name="Conductor Size:" x="0" y="0" width="82" height="15" />
+              <text id="265:370" name="10 mm²" x="304.9535827636719" y="0" width="39" height="15" />
+            </frame>
+            <line id="265:371" name="Line 6" x="0" y="116" width="343.9535827636719" height="0" />
+            <frame id="265:372" name="Frame 59" x="0" y="124" width="343.9535827636719" height="15">
+              <text id="265:373" name="Insulation:" x="0" y="0" width="52" height="15" />
+              <text id="265:374" name="Mineral Insulation" x="253.95358276367188" y="0" width="90" height="15" />
+            </frame>
+            <line id="265:375" name="Line 7" x="0" y="147" width="343.9535827636719" height="0" />
+            <frame id="265:376" name="Frame 60" x="0" y="155" width="343.9535827636719" height="15">
+              <text id="265:377" name="Outer Sheath:" x="0" y="0" width="72" height="15" />
+              <text id="265:378" name="Copper Sheath (Example)" x="210.95358276367188" y="0" width="133" height="15" />
+            </frame>
+            <line id="265:379" name="Line 8" x="0" y="178" width="343.9535827636719" height="0" />
+          </frame>
+          <frame id="265:380" name="Frame 48" x="0" y="278" width="88.79898834228516" height="19.79899024963379">
+            <text id="265:381" name="read more" x="0" y="1.3994947671890259" width="63" height="17" />
+            <frame id="265:382" name="iconoir:arrow-right" x="69" y="9.899495124816895" width="19.79898953437805" height="19.79898953437805" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="265:384" name="Group 30" x="1207" y="0" width="373" height="509.2138671875">
+        <rounded-rectangle id="265:385" name="Rectangle 45" x="1208" y="0" width="372" height="179" />
+        <frame id="265:386" name="Group 32" x="1542.178466796875" y="142.00021362304688" width="24" height="24">
+          <rounded-rectangle id="265:387" name="Rectangle 48" x="1542.178466796875" y="142.00021362304688" width="24" height="24" />
+          <text id="265:388" name="+" x="1549.561279296875" y="143.81808471679688" width="6.892857074737549" height="12.407142639160156" />
+        </frame>
+        <rounded-rectangle id="265:389" name="Rectangle 47" x="1282.739631652832" y="244.6964569091797" width="208.16429138183594" height="196.44642639160156" />
+        <rounded-rectangle id="265:390" name="Rectangle 46" x="1207.0002136230469" y="179.214111328125" width="373" height="330" />
+        <frame id="265:391" name="Frame 39" x="1221.3932056427002" y="13.785749435424805" width="154" height="21">
+          <text id="265:392" name="Low Voltage Power Cables" x="8" y="3" width="138" height="15" />
+        </frame>
+        <frame id="265:393" name="Frame 62" x="1221.3932056427002" y="196.4464569091797" width="343.9535827636719" height="297.7989807128906">
+          <frame id="265:394" name="Frame 61" x="0" y="0" width="160" height="60">
+            <text id="265:395" name="Control Cable" x="0" y="0" width="160" height="17" />
+            <text id="265:396" name="JY-KVV-10×1.5" x="0" y="31" width="160" height="29" />
+          </frame>
+          <frame id="265:397" name="Frame 56" x="0" y="80" width="343.9535827636719" height="178">
+            <frame id="265:398" name="Frame 55" x="0" y="0" width="343.9535827636719" height="15">
+              <text id="265:399" name="Rated Voltage:" x="0" y="0" width="75" height="15" />
+              <text id="265:400" name="450/750V" x="291.9535827636719" y="0" width="52" height="15" />
+            </frame>
+            <line id="265:401" name="Line 3" x="0" y="23" width="343.9535827636719" height="0" />
+            <frame id="265:402" name="Frame 56" x="0" y="31" width="343.9535827636719" height="15">
+              <text id="265:403" name="Conductor:" x="0" y="0" width="58" height="15" />
+              <text id="265:404" name="Copper" x="304.9535827636719" y="0" width="39" height="15" />
+            </frame>
+            <line id="265:405" name="Line 4" x="0" y="54" width="343.9535827636719" height="0" />
+            <frame id="265:406" name="Frame 57" x="0" y="62" width="343.9535827636719" height="15">
+              <text id="265:407" name="Core Configuration:" x="0" y="0" width="101" height="15" />
+              <text id="265:408" name="10-Core" x="301.9535827636719" y="0" width="42" height="15" />
+            </frame>
+            <line id="265:409" name="Line 5" x="0" y="85" width="343.9535827636719" height="0" />
+            <frame id="265:410" name="Frame 58" x="0" y="93" width="343.9535827636719" height="15">
+              <text id="265:411" name="Conductor Size:" x="0" y="0" width="82" height="15" />
+              <text id="265:412" name="1.5 mm²" x="302.9535827636719" y="0" width="41" height="15" />
+            </frame>
+            <line id="265:413" name="Line 6" x="0" y="116" width="343.9535827636719" height="0" />
+            <frame id="265:414" name="Frame 59" x="0" y="124" width="343.9535827636719" height="15">
+              <text id="265:415" name="Insulation:" x="0" y="0" width="52" height="15" />
+              <text id="265:416" name="pvc" x="320.9535827636719" y="0" width="23" height="15" />
+            </frame>
+            <line id="265:417" name="Line 7" x="0" y="147" width="343.9535827636719" height="0" />
+            <frame id="265:418" name="Frame 60" x="0" y="155" width="343.9535827636719" height="15">
+              <text id="265:419" name="Outer Sheath:" x="0" y="0" width="72" height="15" />
+              <text id="265:420" name="PVC" x="320.9535827636719" y="0" width="23" height="15" />
+            </frame>
+            <line id="265:421" name="Line 8" x="0" y="178" width="343.9535827636719" height="0" />
+          </frame>
+          <frame id="265:422" name="Frame 48" x="0" y="278" width="88.79898834228516" height="19.79899024963379">
+            <text id="265:423" name="read more" x="0" y="1.3994947671890259" width="63" height="17" />
+            <frame id="265:424" name="iconoir:arrow-right" x="69" y="9.899495124816895" width="19.79898953437805" height="19.79898953437805" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="269:585" name="Frame 1171275163" x="775" y="5395.2138671875" width="1025" height="988">
+    <frame id="269:540" name="Frame 1171275142" x="0" y="0" width="853" height="112">
+      <text id="269:541" name="Project Gallery" x="0" y="0" width="853" height="44" />
+      <text id="269:542" name="Headline: A Closer Look at the Project. Description:Explore the project environment, cable applications, and installation details through a closer look at the project gallery." x="0" y="64" width="853" height="48" />
+    </frame>
+    <line id="269:543" name="Line 24" x="0" y="132" width="1025" height="0" />
+    <frame id="269:584" name="Frame 1171275162" x="0" y="152" width="1025" height="836">
+      <rounded-rectangle id="269:575" name="Rectangle 9977" x="0" y="0" width="1025" height="618" />
+      <frame id="269:583" name="Frame 1171275161" x="0" y="638" width="1025" height="198">
+        <rounded-rectangle id="269:578" name="Rectangle 9979" x="0" y="0" width="328" height="198" />
+        <rounded-rectangle id="269:579" name="Rectangle 9980" x="348" y="0" width="329" height="198" />
+        <rounded-rectangle id="269:582" name="Rectangle 9981" x="697" y="0" width="328" height="198" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="269:658" name="Group 250" x="0" y="6503" width="1920" height="806">
+    <rounded-rectangle id="269:592" name="Rectangle 9977" x="0" y="6503" width="1920" height="806" />
+    <frame id="269:644" name="Frame 1171275165" x="119" y="6915.2138671875" width="540" height="320">
+      <frame id="269:643" name="Frame 1171275164" x="0" y="0" width="540" height="134">
+        <text id="269:588" name="Project Outcomes" x="0" y="0" width="540" height="44" />
+        <text id="269:589" name="Headline: Delivering Value Through Reliable Solutions. Description:By aligning cable product selection with project requirements, the solution supports dependable electrical infrastructure and application needs." x="0" y="62" width="538" height="72" />
+      </frame>
+      <frame id="269:620" name="Group 246" x="0" y="154" width="540" height="166">
+        <rounded-rectangle id="269:621" name="Rectangle 46" x="0" y="154" width="540" height="166" />
+        <frame id="269:623" name="Frame 61" x="20" y="189" width="293" height="36" />
+        <frame id="269:625" name="Frame 56" x="20" y="181" width="499" height="116">
+          <frame id="269:626" name="Frame 55" x="0" y="0" width="499" height="15">
+            <text id="269:627" name="Application Compatibility" x="0" y="0" width="128" height="15" />
+            <text id="269:628" name="Cable products selected to match project requirements." x="213" y="0" width="286" height="15" />
+          </frame>
+          <line id="269:629" name="Line 3" x="0" y="23" width="499" height="0" />
+          <frame id="269:630" name="Frame 56" x="0" y="31" width="499" height="15">
+            <text id="269:631" name="Quality Assurance" x="0" y="0" width="94" height="15" />
+            <text id="269:632" name="Product inspection conducted according to applicable requirements." x="149" y="0" width="350" height="15" />
+          </frame>
+          <line id="269:633" name="Line 4" x="0" y="54" width="499" height="0" />
+          <frame id="269:634" name="Frame 57" x="0" y="62" width="499" height="15">
+            <text id="269:635" name="Reliable Supply" x="0" y="0" width="78" height="15" />
+            <text id="269:636" name="Professional manufacturing and project-oriented product support." x="162" y="0" width="337" height="15" />
+          </frame>
+          <line id="269:637" name="Line 5" x="0" y="85" width="499" height="0" />
+          <frame id="269:638" name="Frame 58" x="0" y="93" width="499" height="15">
+            <text id="269:639" name="Long-Term Value" x="0" y="0" width="88" height="15" />
+            <text id="269:640" name="Cable solutions designed to support the project&#39;s intended application." x="137" y="0" width="362" height="15" />
+          </frame>
+          <line id="269:641" name="Line 6" x="0" y="116" width="499" height="0" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="269:645" name="Frame 76" x="1010" y="7006.2138671875" width="342" height="209">
+      <text id="269:646" name="Market" x="0" y="0" width="41" height="17" />
+      <text id="269:647" name="20+" x="0" y="37" width="141" height="97" />
+      <frame id="269:648" name="Frame 75" x="0" y="154" width="342" height="55">
+        <text id="269:649" name="Provinces &amp; Regions" x="0" y="0" width="171" height="24" />
+        <text id="269:650" name="Covering 12 major categories of wire and cable products" x="0" y="38" width="342" height="17" />
+      </frame>
+    </frame>
+    <frame id="269:651" name="Frame 77" x="1457" y="7006.2138671875" width="340" height="209">
+      <text id="269:652" name="product" x="0" y="0" width="46" height="17" />
+      <text id="269:653" name="12" x="0" y="37" width="74" height="97" />
+      <frame id="269:654" name="Frame 75" x="0" y="154" width="340" height="55">
+        <text id="269:655" name="Product Categories" x="0" y="0" width="164" height="24" />
+        <text id="269:656" name="Covering 12 major categories of wire and cable products" x="0" y="38" width="342" height="17" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="269:768" name="Frame 1171275166" x="118" y="7423.2138671875" width="1680" height="923">
+    <frame id="269:764" name="Frame 1171275164" x="0" y="0" width="853" height="112">
+      <text id="269:765" name="Related Projects" x="0" y="0" width="853" height="44" />
+      <text id="269:766" name="Headline: More Projects. More Connections. Description:Explore more project applications and discover how Jingyuan Cable supports different industries with reliable cable products." x="0" y="64" width="853" height="48" />
+    </frame>
+    <frame id="269:763" name="Group 252" x="0" y="152" width="1680" height="771">
+      <frame id="269:760" name="Group 251" x="0" y="152" width="1680" height="771">
+        <line id="269:659" name="Line 10" x="0" y="923" width="0.000026424508178024553" height="771" />
+        <frame id="269:660" name="Frame 1171275106" x="30" y="182" width="500" height="708">
+          <frame id="269:661" name="Frame 1171275103" x="0" y="0" width="500" height="613">
+            <rounded-rectangle id="269:662" name="Rectangle 61" x="0" y="0" width="500" height="300" />
+            <frame id="269:663" name="Frame 1171275102" x="0" y="340" width="500" height="273">
+              <frame id="269:664" name="Frame 46" x="0" y="0" width="359" height="21">
+                <frame id="269:665" name="Frame 39" x="0" y="0" width="121" height="21">
+                  <text id="269:666" name="Residential buildings" x="8" y="3" width="105" height="15" />
+                </frame>
+                <frame id="269:667" name="Frame 40" x="127" y="0" width="138" height="21" hidden="true">
+                  <text id="269:668" name="commercial complexes" x="8" y="3" width="122" height="15" />
+                </frame>
+                <frame id="269:669" name="Frame 41" x="127" y="0" width="96" height="21">
+                  <text id="269:670" name="public buildings" x="8" y="3" width="80" height="15" />
+                </frame>
+                <frame id="269:671" name="Frame 42" x="229" y="0" width="130" height="21">
+                  <text id="269:672" name="infrastructure projects" x="8" y="3" width="114" height="15" />
+                </frame>
+              </frame>
+              <frame id="269:673" name="Frame 1171275099" x="0" y="45" width="500" height="228">
+                <text id="269:674" name="Building &amp; Construction Solutions" x="0" y="0" width="500" height="29" />
+                <frame id="269:675" name="Frame 1171275132" x="0" y="43" width="500" height="185">
+                  <text id="269:676" name="Provide cable selection references for residential, commercial buildings and public facilities, meeting the power distribution and installation requirements of different building scenarios." x="0" y="0" width="500" height="54" />
+                  <frame id="269:677" name="Frame 46" x="0" y="74" width="480" height="111">
+                    <line id="269:678" name="Line 8" x="0" y="0" width="480" height="0" />
+                    <text id="269:679" name="Building power distribution, indoor wiring, public facility power supply" x="0" y="10" width="411" height="17" />
+                    <line id="269:680" name="Line 3" x="0" y="37" width="480" height="0" />
+                    <text id="269:681" name="Building Wires / Low Voltage Power Cables / LSZH Cables" x="0" y="47" width="345" height="17" />
+                    <line id="269:682" name="Line 5" x="0" y="74" width="480" height="0" />
+                    <text id="269:683" name="Rated voltage, conductor material, insulating material, laying method" x="0" y="84" width="409" height="17" />
+                    <line id="269:684" name="Line 7" x="0" y="111" width="480" height="0" />
+                  </frame>
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="269:685" name="Group 37" x="0" y="670" width="500" height="38">
+            <rounded-rectangle id="269:686" name="Rectangle 34" x="0" y="670" width="500" height="38" />
+            <frame id="269:687" name="Frame 48" x="178" y="681" width="145" height="17">
+              <text id="269:688" name="Explore Our Products" x="0" y="0" width="119" height="17" />
+              <frame id="269:689" name="iconoir:arrow-right" x="131" y="1.5" width="14" height="14" />
+            </frame>
+          </frame>
+        </frame>
+        <line id="269:691" name="Line 11" x="560" y="923" width="0.000026424508178024553" height="771" />
+        <frame id="269:692" name="Frame 1171275107" x="590" y="182" width="500" height="708">
+          <frame id="269:693" name="Frame 1171275104" x="0" y="0" width="500" height="613">
+            <rounded-rectangle id="269:694" name="Rectangle 61" x="0" y="0" width="500" height="300" />
+            <frame id="269:695" name="Frame 1171275102" x="0" y="340" width="500" height="273">
+              <frame id="269:696" name="Frame 46" x="0" y="0" width="359" height="21">
+                <frame id="269:697" name="Frame 39" x="0" y="0" width="121" height="21">
+                  <text id="269:698" name="Residential buildings" x="8" y="3" width="105" height="15" />
+                </frame>
+                <frame id="269:699" name="Frame 40" x="127" y="0" width="138" height="21" hidden="true">
+                  <text id="269:700" name="commercial complexes" x="8" y="3" width="122" height="15" />
+                </frame>
+                <frame id="269:701" name="Frame 41" x="127" y="0" width="96" height="21">
+                  <text id="269:702" name="public buildings" x="8" y="3" width="80" height="15" />
+                </frame>
+                <frame id="269:703" name="Frame 42" x="229" y="0" width="130" height="21">
+                  <text id="269:704" name="infrastructure projects" x="8" y="3" width="114" height="15" />
+                </frame>
+              </frame>
+              <frame id="269:705" name="Frame 1171275099" x="0" y="45" width="500" height="228">
+                <text id="269:706" name="Building &amp; Construction Solutions" x="0" y="0" width="500" height="29" />
+                <frame id="269:707" name="Frame 1171275132" x="0" y="43" width="500" height="185">
+                  <text id="269:708" name="Provide cable selection references for residential, commercial buildings and public facilities, meeting the power distribution and installation requirements of different building scenarios." x="0" y="0" width="500" height="54" />
+                  <frame id="269:709" name="Frame 46" x="0" y="74" width="480" height="111">
+                    <line id="269:710" name="Line 8" x="0" y="0" width="480" height="0" />
+                    <text id="269:711" name="Building power distribution, indoor wiring, public facility power supply" x="0" y="10" width="411" height="17" />
+                    <line id="269:712" name="Line 3" x="0" y="37" width="480" height="0" />
+                    <text id="269:713" name="Building Wires / Low Voltage Power Cables / LSZH Cables" x="0" y="47" width="345" height="17" />
+                    <line id="269:714" name="Line 5" x="0" y="74" width="480" height="0" />
+                    <text id="269:715" name="Rated voltage, conductor material, insulating material, laying method" x="0" y="84" width="409" height="17" />
+                    <line id="269:716" name="Line 7" x="0" y="111" width="480" height="0" />
+                  </frame>
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="269:717" name="Group 8" x="0" y="670" width="500" height="38">
+            <rounded-rectangle id="269:718" name="Rectangle 34" x="0" y="670" width="500" height="38" />
+            <frame id="269:719" name="Frame 48" x="178" y="681" width="145" height="17">
+              <text id="269:720" name="Explore Our Products" x="0" y="0" width="119" height="17" />
+              <frame id="269:721" name="iconoir:arrow-right" x="131" y="1.5" width="14" height="14" />
+            </frame>
+          </frame>
+        </frame>
+        <line id="269:723" name="Line 12" x="1120" y="923" width="0.000026424508178024553" height="771" />
+        <frame id="269:724" name="Frame 1171275108" x="1150" y="182" width="500" height="708">
+          <frame id="269:725" name="Frame 1171275105" x="0" y="0" width="500" height="613">
+            <rounded-rectangle id="269:726" name="Rectangle 61" x="0" y="0" width="500" height="300" />
+            <frame id="269:727" name="Frame 1171275102" x="0" y="340" width="500" height="273">
+              <frame id="269:728" name="Frame 46" x="0" y="0" width="359" height="21">
+                <frame id="269:729" name="Frame 39" x="0" y="0" width="121" height="21">
+                  <text id="269:730" name="Residential buildings" x="8" y="3" width="105" height="15" />
+                </frame>
+                <frame id="269:731" name="Frame 40" x="127" y="0" width="138" height="21" hidden="true">
+                  <text id="269:732" name="commercial complexes" x="8" y="3" width="122" height="15" />
+                </frame>
+                <frame id="269:733" name="Frame 41" x="127" y="0" width="96" height="21">
+                  <text id="269:734" name="public buildings" x="8" y="3" width="80" height="15" />
+                </frame>
+                <frame id="269:735" name="Frame 42" x="229" y="0" width="130" height="21">
+                  <text id="269:736" name="infrastructure projects" x="8" y="3" width="114" height="15" />
+                </frame>
+              </frame>
+              <frame id="269:737" name="Frame 1171275099" x="0" y="45" width="500" height="228">
+                <text id="269:738" name="Building &amp; Construction Solutions" x="0" y="0" width="500" height="29" />
+                <frame id="269:739" name="Frame 1171275132" x="0" y="43" width="500" height="185">
+                  <text id="269:740" name="Provide cable selection references for residential, commercial buildings and public facilities, meeting the power distribution and installation requirements of different building scenarios." x="0" y="0" width="500" height="54" />
+                  <frame id="269:741" name="Frame 46" x="0" y="74" width="480" height="111">
+                    <line id="269:742" name="Line 8" x="0" y="0" width="480" height="0" />
+                    <text id="269:743" name="Building power distribution, indoor wiring, public facility power supply" x="0" y="10" width="411" height="17" />
+                    <line id="269:744" name="Line 3" x="0" y="37" width="480" height="0" />
+                    <text id="269:745" name="Building Wires / Low Voltage Power Cables / LSZH Cables" x="0" y="47" width="345" height="17" />
+                    <line id="269:746" name="Line 5" x="0" y="74" width="480" height="0" />
+                    <text id="269:747" name="Rated voltage, conductor material, insulating material, laying method" x="0" y="84" width="409" height="17" />
+                    <line id="269:748" name="Line 7" x="0" y="111" width="480" height="0" />
+                  </frame>
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="269:749" name="Group 38" x="0" y="670" width="500" height="38">
+            <rounded-rectangle id="269:750" name="Rectangle 34" x="0" y="670" width="500" height="38" />
+            <frame id="269:751" name="Frame 48" x="178" y="681" width="145" height="17">
+              <text id="269:752" name="Explore Our Products" x="0" y="0" width="119" height="17" />
+              <frame id="269:753" name="iconoir:arrow-right" x="131" y="1.5" width="14" height="14" />
+            </frame>
+          </frame>
+        </frame>
+        <line id="269:755" name="Line 13" x="1680" y="923" width="0.000026424508178024553" height="771" />
+      </frame>
+      <frame id="269:761" name="Group 251" x="0" y="152" width="1680" height="770">
+        <line id="269:757" name="Line 23" x="0" y="922" width="1680" height="0" />
+        <line id="269:759" name="Line 24" x="0" y="152" width="1680" height="0" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="271:461" name="Frame 1171275170" x="-1" y="8436" width="1921" height="1350">
+    <rounded-rectangle id="271:462" name="Rectangle 58" x="0" y="0" width="1922" height="1333" />
+    <frame id="271:463" name="Mask group" x="1580.107421875" y="-162" width="1691.7278946370934" height="1654.8831003425876">
+      <rounded-rectangle id="271:464" name="ChatGPT Image 2026年11月10日 14_12_15 1" x="1322.0468642476899" y="0.1884833202171876" width="1286.4014493443756" height="1330.5063318502362" />
+      <rounded-rectangle id="271:465" name="ChatGPT Image 2026年11月10日 14_12_15 2" x="1322.0468642476899" y="0.1884833202171876" width="1286.4014493443756" height="1330.5063318502362" />
+    </frame>
+    <frame id="271:466" name="Frame 94" x="121" y="177" width="777" height="456">
+      <frame id="271:467" name="Frame 34" x="0" y="0" width="777" height="368">
+        <text id="271:468" name="Let&#39;s Build Connections." x="0" y="0" width="777" height="292" />
+        <frame id="271:469" name="Frame 33" x="0" y="316" width="622" height="52">
+          <text id="271:470" name="Looking for a trusted cable partner? Connect with Jingyuan Cable for dependable products and professional support." x="0" y="0" width="622" height="52" />
+        </frame>
+      </frame>
+      <frame id="271:471" name="Group 23" x="0" y="418" width="482" height="38">
+        <rounded-rectangle id="271:472" name="Rectangle 34" x="0" y="418" width="482" height="38" />
+        <frame id="271:473" name="Frame 48" x="171" y="429" width="141" height="17">
+          <text id="271:474" name="Discuss Your Project" x="0" y="0" width="115" height="17" />
+          <frame id="271:475" name="iconoir:arrow-right" x="127" y="1.5" width="14" height="14" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="271:477" name="Group 241" x="0" y="800" width="1220" height="470">
+      <rounded-rectangle id="271:478" name="Rectangle 62" x="0" y="800" width="1220" height="470" />
+      <frame id="271:479" name="Frame 1171275130" x="121" y="884" width="879" height="280">
+        <frame id="271:480" name="Frame 1171275124" x="0" y="0" width="272" height="280">
+          <frame id="271:481" name="Frame 16" x="0" y="0" width="121" height="18">
+            <text id="271:482" name="01." x="0" y="0" width="18" height="18" />
+            <text id="271:483" name="main product" x="38" y="0" width="83" height="18" />
+          </frame>
+          <text id="271:484" name="Low Voltage Power Cables LSZH Cables Mineral Insulated Cables Building Wires Aluminum Alloy Cables Control Cables" x="0" y="40" width="272" height="240" />
+        </frame>
+        <frame id="271:485" name="Frame 1171275125" x="405" y="0" width="221" height="200">
+          <frame id="271:486" name="Frame 16" x="0" y="0" width="186" height="18">
+            <text id="271:487" name="02." x="0" y="0" width="21" height="18" />
+            <text id="271:488" name="direction of application" x="41" y="0" width="145" height="18" />
+          </frame>
+          <text id="271:489" name="Building &amp; Infrastructure Industrial &amp; Manufacturing Transportation Energy &amp; Power" x="0" y="40" width="221" height="160" />
+        </frame>
+        <frame id="271:490" name="Frame 1171275126" x="759" y="0" width="120" height="240">
+          <frame id="271:491" name="Frame 16" x="0" y="0" width="120" height="18">
+            <text id="271:492" name="03." x="0" y="0" width="21" height="18" />
+            <text id="271:493" name="Social media" x="41" y="0" width="79" height="18" />
+          </frame>
+          <text id="271:494" name="linkedin instegream facebook twitter youtube" x="0" y="40" width="120" height="200" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="271:495" name="Frame 1171275129" x="1220" y="595" width="693" height="675">
+      <frame id="271:496" name="Group 240" x="-717.0081176757812" y="-757" width="1691.7279052734375" height="1654.883056640625">
+        <rounded-rectangle id="271:497" name="Rectangle 63" x="-0.0009765625" y="0" width="701" height="750" />
+        <frame id="271:498" name="Mask group" x="360.09967041015625" y="-757" width="1691.7278946370934" height="1654.8831003425876">
+          <rounded-rectangle id="271:499" name="ChatGPT Image 2026年11月10日 14_12_15 1" x="102.03911278284625" y="-594.8115166797828" width="1286.4014493443756" height="1330.5063318502362" />
+          <rounded-rectangle id="271:500" name="ChatGPT Image 2026年11月10日 14_12_15 2" x="0.9922273562842747" y="0.000006403832230716944" width="544.0000473232185" height="589.9999820872745" />
+        </frame>
+        <frame id="271:501" name="Frame 1171275128" x="84" y="84" width="497" height="498">
+          <frame id="271:502" name="Frame 1171275118" x="0" y="0" width="497" height="98">
+            <text id="271:503" name="Let&#39;s Start a Conversation." x="0" y="0" width="445" height="26" />
+            <text id="271:504" name="Have a project in mind or need more information about our cable products? Get in touch with our team. We&#39;re ready to assist you." x="0" y="50" width="497" height="48" />
+          </frame>
+          <frame id="271:505" name="Frame 1171275123" x="0" y="143" width="372" height="355">
+            <frame id="271:506" name="Frame 1171275119" x="0" y="0" width="217" height="59">
+              <frame id="271:507" name="andrsrxn:phone-log" x="0" y="19" width="40" height="40" hidden="true" />
+              <frame id="271:511" name="Frame 1171275113" x="0" y="0" width="217" height="59">
+                <text id="271:512" name="Phone" x="0" y="0" width="217" height="19" />
+                <text id="271:513" name="+86 XXX XXXX XXXX" x="0" y="30" width="217" height="29" />
+              </frame>
+            </frame>
+            <frame id="271:514" name="Frame 1171275120" x="0" y="89" width="264" height="59">
+              <frame id="271:515" name="andrsrxn:mail-heart" x="0" y="19" width="40" height="40" hidden="true" />
+              <frame id="271:520" name="Frame 1171275114" x="0" y="0" width="264" height="59">
+                <text id="271:521" name="Email" x="0" y="0" width="264" height="19" />
+                <text id="271:522" name="sales@yourcompany.com" x="0" y="30" width="264" height="29" />
+              </frame>
+            </frame>
+            <frame id="271:523" name="Frame 1171275121" x="0" y="178" width="372" height="59">
+              <frame id="271:524" name="andrsrxn:map-pin-zone" x="0" y="19" width="40" height="40" hidden="true" />
+              <frame id="271:531" name="Frame 1171275115" x="0" y="0" width="310" height="59">
+                <text id="271:532" name="Address" x="0" y="0" width="310" height="19" />
+                <text id="271:533" name="Your Company Address, China" x="0" y="30" width="310" height="29" />
+              </frame>
+            </frame>
+            <frame id="271:534" name="Frame 1171275122" x="0" y="267" width="293" height="88">
+              <frame id="271:535" name="andrsrxn:house-heart" x="0" y="48" width="40" height="40" hidden="true" />
+              <frame id="271:540" name="Frame 1171275116" x="0" y="0" width="293" height="88">
+                <text id="271:541" name="Business Hours" x="0" y="0" width="293" height="19" />
+                <text id="271:542" name="Monday – Friday 9:00 AM – 6:00 PM (GMT+8)" x="0" y="30" width="293" height="58" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="271:543" name="Group 239" x="1" y="1270" width="1921" height="80">
+      <rounded-rectangle id="271:544" name="Rectangle 64" x="1" y="1270" width="1921" height="80" />
+      <text id="271:545" name="Copyright © 2026 Shandong Jingyuan Cable Co., Ltd. All Rights Reserved" x="121" y="1298" width="547" height="22" />
+      <frame id="271:546" name="Frame 1171275127" x="1309" y="1298" width="283" height="22">
+        <text id="271:547" name="powewed by alida" x="0" y="0" width="137" height="22" />
+        <text id="271:548" name="Privacy Policy" x="181" y="0" width="102" height="22" />
+      </frame>
+      <frame id="271:549" name="andrsrxn:key-shift" x="1777" y="1298" width="24" height="24" />
+    </frame>
+  </frame>
+</frame>

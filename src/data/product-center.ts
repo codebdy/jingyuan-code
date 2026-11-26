@@ -1,0 +1,27 @@
+// Semantic roles for the six original product-center cards; geometry stays in the Figma data.
+export const productCenterRoles: Record<string, string> = {
+  "271:34": "body",
+  "271:20": "paint",
+  "271:23": "name",
+  "271:24": "description",
+  "271:42": "body",
+  "271:43": "paint",
+  "271:51": "name",
+  "271:52": "description",
+  "271:55": "body",
+  "271:56": "paint",
+  "271:64": "name",
+  "271:65": "description",
+  "271:70": "body",
+  "271:71": "paint",
+  "271:79": "name",
+  "271:80": "description",
+  "271:96": "body",
+  "271:97": "paint",
+  "271:105": "name",
+  "271:106": "description",
+  "271:109": "body",
+  "271:110": "paint",
+  "271:118": "name",
+  "271:119": "description"
+};
