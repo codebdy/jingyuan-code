@@ -12,6 +12,8 @@
 .design-canvas .dnode[data-action][data-footer-inquiry]>[data-button-background]{background:#bababa!important}
 .action[data-footer-inquiry],
 .design-canvas .dnode[data-action][data-footer-inquiry]{color:#000!important}
+.action[data-footer-inquiry]:not(:hover):not(:focus-visible) img,
+.design-canvas .dnode[data-action][data-footer-inquiry]:not(:hover):not(:focus-visible) img{filter:brightness(0)!important}
 .action[data-footer-inquiry]:is(:hover,:focus-visible),
 .design-canvas .dnode[data-action][data-footer-inquiry]:is(:hover,:focus-visible),
 .design-canvas .dnode[data-action][data-footer-inquiry]:is(:hover,:focus-visible)>[data-button-background]{background:var(--orange)!important}

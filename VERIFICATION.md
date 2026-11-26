@@ -336,3 +336,9 @@
 - 按用户最新截图和“按钮文字”明确要求，默认恢复 #BABABA 灰底、文字为 #000000；悬停/可见焦点保留橙底白字，箭头及链接不变。
 - 构建通过，生成 14 页。Chrome 验证全站 14 页 × 1920 / 390px 共 28 组：实际文字节点默认为黑色、独立背景层灰色、悬停橙底白字、移出恢复，链接仍为 /contact/，无页面脚本错误；截图已核对。
 - 临时脚本 /private/tmp/jingyuan-qa/verify-footer-text-black.mjs，截图 footer-text-black-{1920,390}.png。
+
+## 2026-11-26 底部箭头默认黑色
+
+- 默认状态仅将底部 Discuss Your Project 的原箭头图标滤为黑色；灰底黑字、箭头尺寸/移动和联系链接保留，悬停/键盘焦点沿用橙底白字白箭头。
+- 构建通过，14 页输出成功；Chrome 检查 14 页 × 1920 / 390px 共 28 组，默认黑箭头、悬停还原及移出恢复均通过，截图已核对。
+- 临时检查 /private/tmp/jingyuan-qa/verify-footer-arrow.mjs，截图 footer-arrow-black-{1920,390}.png。
