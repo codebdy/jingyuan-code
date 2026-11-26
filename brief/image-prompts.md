@@ -57,3 +57,9 @@ SVG 箭头、搜索、询盘、勾选、回顶与分隔线也来自原稿，未�
 
 - 来源为用户提供的 /Users/biliqun/Downloads/0_Braided_Cable_1920x1080.mp4。原文件无转码复制到 public/videos/home-braided-cable.mp4，未生成或改写视频画面。
 - home-braided-cable-poster.webp 通过浏览器解码原片并提取首帧，尺寸 1920×1080；替换首页 33:97 的静态占位。原 hero-cables.png 保留为历史素材。
+
+## 2026-11-26 导航 Logo 去底与反白
+
+- 原图：用户提供 codex-clipboard-2e4081ae-4177-40fd-99c2-775fe4b6b290.png，原样保存在 public/branding/jingyuan-logo-source.png。
+- 尝试内置 imagegen，提示为“原图精确去底，所有灰色 Logo 转为纯白，保留轮廓及注册标记，透明背景，无杂点、不重设计”。两次生成结果出现杂点，未用于网站。
+- 最终素材 public/branding/jingyuan-logo-white.svg 直接内嵌原 PNG，通过 SVG 颜色/透明度矩阵将灰色笔画转为纯白、白底及内部空白转为透明，保留原始像素轮廓；viewBox 24 30 196 200 裁去多余白边。非 AI 重绘，未修改原图。

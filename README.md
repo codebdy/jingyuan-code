@@ -74,3 +74,7 @@
 源码仓库为 https://github.com/codebdy/jingyuan-code，网站项目直接位于仓库根目录。克隆或下载后，在包含 package.json 的目录安装依赖，再执行 `pnpm dev` 进行本机预览、`pnpm build` 生成 dist。上传源码与网站部署分别处理；当前没有配置自动部署。
 
 每次修改后先构建并检查本地预览，再提交并推送到 main。node_modules、dist、.astro、本地 .env 及日志不提交；空白的 .env.example 用于说明可选询盘接收配置。图片、动图、视频和已完成页面源码随仓库保存，无需依赖本机 Downloads 目录。
+
+全站导航 Home 已替换为用户提供的透明 Logo：`public/branding/jingyuan-logo-white.svg`，原图保存在同目录的 `jingyuan-logo-source.png`。标志保留原轮廓，电脑 56px、手机 44px，点击返回首页；不依赖本机临时文件或生成图片目录。
+
+首页 Logo 打开时为黑色，滚动后在黑色导航上显示白色，返回顶部恢复；内页保持白色以配合原有背景。
