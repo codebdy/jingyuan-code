@@ -3,13 +3,16 @@ import '@fontsource-variable/inter-tight';
 import '../styles/home.css';
 import '../styles/design.css';
 import '../styles/interaction-refinements.css';
+import '../styles/case-study.css';
 import DesignNode from '../components/DesignNode.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteInteractions from '../components/SiteInteractions.astro';
 import { createProductDetails } from '../data/product-details';
+import { createCaseStudyLayout } from '../data/case-study-layout';
 export function getStaticPaths(){const all=Object.values(import.meta.glob('../data/design/*.json',{eager:true,import:'default'})) as any[];const template=all.find(page=>page.slug==='products/jy-yjv-3x25');return [...all.filter(page=>page!==template),...createProductDetails(template)].map(page=>({params:{page:page.slug},props:{page}}));}
 const {page}=Astro.props;
+const root=page.slug==='applications/project'?createCaseStudyLayout(page.root):page.root;
 ---
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex, nofollow"/><meta name="description" content={page.description??`${page.title} — Xinjingyuan Cable products, manufacturing and professional service.`}/><title>{page.title} | Xinjingyuan Cable</title></head>
-<body class="design-body"><div class="site" id="top"><SiteHeader theme={page.slug.startsWith('products/jy-')?'plain':'photo'}/><main class="design-canvas" data-page={page.slug} data-product-model={page.productModel} data-figma-id={page.id} style={`height:calc(${page.height} * var(--u))`}><DesignNode node={page.root} productCenter={page.slug==='products'}/></main></div><SiteInteractions/></body></html>
+<body class="design-body"><div class="site" id="top"><SiteHeader theme={page.slug.startsWith('products/jy-')?'plain':'photo'}/><main class="design-canvas" data-page={page.slug} data-product-model={page.productModel} data-figma-id={page.id} style={`height:calc(${page.height} * var(--u))`}><DesignNode node={root} productCenter={page.slug==='products'}/></main></div><SiteInteractions/></body></html>
